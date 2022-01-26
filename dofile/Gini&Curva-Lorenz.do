@@ -15,7 +15,6 @@
 
 *-------------------------------------------*
 
-
 cls  
 clear all
 set more off 
@@ -26,6 +25,29 @@ global dataset    "D:\Dropbox\BASES\ENAHO\Inicial2\"
 global graficos   "$ubicacion\\Gini\graficos"
 
 cd $dataset 
+
+
+** Descarga **
+
+
+
+ 
+
+** limpieza  ** 
+
+
+
+
+
+** comandos nuevos ** 
+
+findit ineqerr  
+findit ineqdec0 
+
+ssc install lorenz 
+search glcurve
+
+** ** 
 
 dir*dta 
 use sumaria-2020.dta 
@@ -118,7 +140,6 @@ lorenz ipcm [w=facpob] if area==2,g
 
 
 *2da forma:
-
 glcurve ipcm [aw=facpob] if area==1 , pvar(p1) glvar(l1) lorenz nograph
 glcurve ipcm [aw=facpob] if area==2, pvar(p2) glvar(l2) lorenz nograph
 
@@ -128,12 +149,12 @@ replace l1=l1*100
 replace l2=l2*100
 
 graph twoway (line l1 p1, sort yaxis(1 2))  ///    
-           (line l2 p2, sort yaxis(1 2)) ///    
+            (line l2 p2, sort yaxis(1 2))   /// 
           (function y = x, range(0 100) yaxis(1 2)) ///    
           , aspect(1) xtitle("% acumulado población, p") ///    
           title("Comparación de la Curva de Lorenz,2020") ///    
           ytitle("% acumulado ingresos") ///    
-          legend(label(1 "L1-Urbano") label(2 "L2-Rural") label(3 "Equidistribución") )
+          legend(label(1 "L1-Urbano") label(2 "L2-Rural") label(3 "Equidistribución") ) 
 
 graph export "${graficos}//graph01.png", width(1000) replace
 		  
