@@ -1,0 +1,2 @@
+# Gini-Lorenz
+En este repositorio encontrarás archivos para realizar análisis del Indice de Gini y la curva de Lorenz del Perú usando Stata. Para realizar análisis a nivel nacional, urbano rural, departamental, sexo y grupo de edad,  sólo tendrías que realizar algunos ajustes a las líneas , en el código principal llamado "T1.1_Gini-ingresoCurva-Lorenz.do", que se ubica en la carpeta dofile. No te olvides de usar el dofile "Descarga de microdatos" para descargar los datos.
