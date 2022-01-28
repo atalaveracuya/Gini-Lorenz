@@ -1,3 +1,4 @@
+
 ************************************
 ***************************************
 ***Indice de Gini y Curva de lorenz ***
@@ -14,6 +15,7 @@ global ubicacion   "D:\ANDRES\Documentos\GitHub\IndicadoresStata\Gini\"
 global dataset     "$ubicacion\dataset" 
 global dofile      "$ubicacion\dofile"
 global graficos    "$ubicacion\graficos"
+global excel       "$ubicacion\excel"
 
 global inicio     2015
 global final      2020
@@ -33,13 +35,25 @@ do "${dofile}//7.-verificar-si-corresponde-al-periodo-y-modulo.do"
 ** ** 
 
 cd $dataset/Inicial 
-use enaho01-2017-200.dta, clear
+
+global ini=$inicio-2000 
+global fin=$final-2000  
+global periodo=$final - $inicio + 1
+
+mat ginianual=J($periodo,2,0)
+
+		forvalues i=$ini(1)$fin{
+
+	local year=2000
+	local year=`year' + `i'
+	local t = `year'+1-$inicio
+
+use enaho01-`year'-200.dta, clear
 keep if p203==1
 save "enaho-cap200-jh.dta",replace 
 
-
 use enaho-cap200-jh.dta,clear 
-merge 1:1 conglome vivienda hogar using sumaria-2017.dta 
+merge 1:1 conglome vivienda hogar using sumaria-`year'.dta 
 
 
 *FACTOR DE EXPANSION POBLACIONAL 
@@ -68,10 +82,10 @@ do "${dofile}//12.-deciles.do"
 **Resultados
 
 *Gasto real promedio per capita mensual, por deciles 
-table d_gpcm [aw=facpob], stat( mean gpcm) nformat(%15.0f) 
+table d_gpcm [aw=facpob], c( mean gpcm) format(%15.0f) 
 
 *ingreso real promedio per capita mensual, por deciles 
-table d_ipcm [aw=facpob], stat( mean ipcm) nformat(%15.0f) 
+table d_ipcm [aw=facpob], c( mean ipcm) format(%15.0f) 
 
 
 *Indice de Gini-desigualdad de gasto 
@@ -85,7 +99,32 @@ table d_ipcm [aw=facpob], stat( mean ipcm) nformat(%15.0f)
 
 *Nacional 
 ineqdec0 gpcm [w=facpob]
+return list 
+local gini=`r(gini)' 
+display `gini'
+mat gini`year'=J(1,1,0)
+mat gini`year'[1,1]=`year'
+mat gini`year'[1,2]=`gini'
 
+		}
+
+
+		forvalues i=$ini(1)$fin{
+
+	local year=2000
+	local year=`year' + `i'
+	local t = `year'+1-$inicio
+mat ginianual[`t',1]=gini`year'
+		}
+		
+mat list ginianual		
+mat ginianual=ginianual' 
+mat list ginianual
+*local CellContents = ginianual[2,6]
+
+putexcel set "${excel}\reportJanuary272022.xlsx", sheet("1.1") modify 
+*putexcel C6 = `CellContents',nformat(#,###.0) hcenter  
+exit 
 *Urbano-Rural 
 ineqdec0 gpcm [w=facpob], by(area) 
 
@@ -167,3 +206,5 @@ graph twoway  (line l1 p1, sort yaxis(1 2))  ///
           legend(label(1 "L1-Varon") label(2 "L2-Mujer") label(3 "Equidistribución") ) 
 
 graph export "${graficos}//graph02.png", width(1000) replace
+		  
+		  
