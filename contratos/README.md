@@ -4,6 +4,8 @@ Dos modelos de contrato de arrendamiento de área de terreno (250 m² totales), 
 
 - `Contrato_Arrendamiento_Taller_Mecanica_Automotriz.docx` — renta S/ 2,500.00 mensual.
 - `Contrato_Arrendamiento_Taller_Soldadura.docx` — renta S/ 500.00 mensual.
+- `Carta_Notarial_Requerimiento_Taller_Mecanica_Automotriz.docx` — carta notarial para la deuda actual de 5 meses (S/ 12,500.00).
+- `Carta_Notarial_Requerimiento_Taller_Soldadura.docx` — carta notarial para la deuda actual de 5 meses (S/ 2,500.00).
 
 ## Cláusula clave (Cláusula Octava)
 
@@ -30,6 +32,18 @@ Se agregó una cláusula de **conciliación extrajudicial** (Ley N° 26872) para
 ## Campos por completar antes de firmar
 
 Ambos documentos usan marcadores entre corchetes `[ ]` que deben completarse manualmente: datos de las partes (nombre, DNI/RUC, domicilio), dirección y partida registral del terreno, área en m² asignada a cada arrendatario (la suma de ambas debe dar 250 m²), plazo y fechas, cuenta bancaria, monto del depósito en garantía, datos del fiador solidario, distrito judicial y fecha de firma.
+
+## Cartas notariales para la deuda actual (5 meses)
+
+Estas dos cartas están redactadas para la deuda YA existente, bajo el **contrato actual** (el que vence en diciembre y no tiene cláusula resolutoria expresa) — por eso, a diferencia de la Cláusula Octava de los contratos nuevos, se basan directamente en el Código Civil general:
+
+- **Art. 1697° inc. 1**: más de un mes y 15 días de renta impaga es causal de resolución.
+- **Art. 1333°**: constituye en mora al inquilino desde la recepción de la carta.
+- **Art. 1429°**: como el contrato actual no tiene cláusula resolutoria expresa, la carta SÍ debe otorgar un plazo mínimo de 15 días hábiles para pagar antes de poder resolver el contrato — por eso se incluye ese plazo.
+
+Cada carta trae una tabla con el detalle de los 5 meses adeudados (a completar con los meses exactos) y el total (S/ 12,500 mecánica / S/ 2,500 soldadura), el requerimiento formal de pago, el apercibimiento de resolución y acciones legales (desalojo + embargo), y una invitación abierta a negociar un cronograma de pago o conciliar, para maximizar que paguen sin necesidad de llegar a juicio.
+
+**Recomendación de uso:** enviarlas a través de un Notario Público (no basta un correo o carta simple) para que quede fecha cierta y sirvan como prueba del requerimiento en un eventual proceso judicial. Completar los campos entre corchetes (nombre, dirección, fecha del contrato actual, meses adeudados) antes de remitirlas.
 
 ## Recomendación final
 
