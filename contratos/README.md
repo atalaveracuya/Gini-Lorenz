@@ -12,7 +12,13 @@ Ambos contratos resuelven de pleno derecho (art. 1430° Código Civil) apenas el
 2. Exigir la restitución del inmueble.
 3. Iniciar desalojo (incluido el **desalojo notarial exprés de la Ley N° 30933**, ~15 días hábiles) y/o proceso de ejecución de dar suma de dinero, con solicitud de **embargo** sobre bienes del arrendatario y/o su fiador solidario.
 
-**Importante:** el embargo *no* es automático por firmar el contrato — requiere, como mínimo, legalizar las firmas ante notario (o elevar el contrato a escritura pública) y tramitar el procedimiento notarial/judicial correspondiente (Cláusula Décimo Sétima). Esa legalización es la que le da al contrato fuerza de título ejecutivo y acceso a la vía rápida de la Ley 30933.
+**Importante:** el embargo *no* es automático por firmar el contrato — requiere, como mínimo, legalizar las firmas ante notario (o elevar el contrato a escritura pública) y tramitar el procedimiento notarial/judicial correspondiente (Cláusula Décimo Octava). Esa legalización es la que le da al contrato fuerza de título ejecutivo y acceso a la vía rápida de la Ley 30933.
+
+## Cláusula de conciliación previa (Cláusula Décimo Sétima)
+
+Se agregó una cláusula de **conciliación extrajudicial** (Ley N° 26872) para el cobro de la deuda dineraria: obliga a intentar conciliar en un Centro acreditado por el MINJUS (plazo referencial de 10 días hábiles) antes de ir a juicio por obligación de dar suma de dinero. Si hay acuerdo, el acta de conciliación tiene el mismo valor que una sentencia (título de ejecución, art. 18° Ley 26872) y permite pedir embargo directo si el inquilino no cumple lo acordado — normalmente en semanas, mucho más rápido que un juicio declarativo desde cero (que puede tomar 1-3 años).
+
+**Aclaración importante:** la conciliación NO es obligatoria ni aplica para el desalojo (ni el ordinario ni el notarial exprés de la Ley 30933) — por eso la cláusula deja expresamente a salvo esas vías. Tampoco garantiza que el inquilino pague: si no asiste a la audiencia o no llega a acuerdo, no se genera título alguno y la propietaria puede pasar de inmediato a la vía de cobranza/desalojo ya pactada en la Cláusula Octava, sin esperar ni depender de la conciliación.
 
 ## Otras cláusulas incluidas
 
@@ -27,4 +33,4 @@ Ambos documentos usan marcadores entre corchetes `[ ]` que deben completarse man
 
 ## Recomendación final
 
-Antes de firmar, hacer revisar los contratos por un abogado peruano y **legalizar las firmas ante notario** (paso indispensable para que operen la Ley 30933 y la vía de título ejecutivo pactadas en la Cláusula Octava). Este contenido es investigación e información legal de referencia, no asesoría legal vinculante.
+Antes de firmar, hacer revisar los contratos por un abogado peruano y **legalizar las firmas ante notario** (paso indispensable para que operen la Ley 30933 y la vía de título ejecutivo pactadas en la Cláusula Octava, ahora numeradas hasta la Cláusula Décimo Octava). Este contenido es investigación e información legal de referencia, no asesoría legal vinculante.
