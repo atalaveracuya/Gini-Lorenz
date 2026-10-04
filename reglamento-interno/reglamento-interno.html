@@ -1,0 +1,1179 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reglamento Interno Mz. A Lt. 17</title>
+<meta name="description" content="Borrador del Reglamento Interno del Edificio Mz. A Lote 17, Urb. San Francisco de Asís, Santiago de Surco.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,650&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+/* Layout: una columna de lectura (~68ch), barra de secciones fija arriba, tablas con scroll propio. */
+:root{
+  --bg:#f4f6f5; --surface:#ffffff; --fg:#1b2730; --muted:#5a6872; --line:#d8dfdd;
+  --accent:#1f5f7a; --accent-soft:#e3eef2; --ph:#fff1c2; --ph-fg:#5c4400; --warn:#8a5a00;
+  --f-display:"Newsreader", Georgia, "Times New Roman", serif;
+  --f-body:"Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12181c; --surface:#1a2228; --fg:#e4eaec; --muted:#9aa8b0; --line:#2c3840;
+  --accent:#7dbad3; --accent-soft:#1d3440; --ph:#4a3b10; --ph-fg:#ffe6a3; --warn:#f0c46a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12181c; --surface:#1a2228; --fg:#e4eaec; --muted:#9aa8b0; --line:#2c3840;
+  --accent:#7dbad3; --accent-soft:#1d3440; --ph:#4a3b10; --ph-fg:#ffe6a3; --warn:#f0c46a; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:16px;line-height:1.6;margin:0}
+.wrap{max-width:46rem;margin:0 auto;padding-inline:16px;padding-block:0 4rem}
+header.hero{padding-block:2rem 1.25rem;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-family:var(--f-display);font-weight:650;font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;margin:.4rem 0 .5rem;text-wrap:balance}
+.sub{color:var(--muted);margin:0}
+.badge{display:inline-block;margin-top:.9rem;font-size:.8rem;font-weight:600;color:var(--warn);border:1px solid currentColor;border-radius:4px;padding:.15rem .5rem}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-inline:-16px;padding:.5rem 16px;display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none}
+nav.tabs a{flex:none;text-decoration:none;color:var(--fg);font-size:.9rem;font-weight:600;padding:.4rem .8rem;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+nav.tabs a:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section.part{padding-top:2rem}
+section.part>h2.part-title{font-family:var(--f-display);font-size:1.7rem;margin:0 0 1rem;font-weight:650}
+h2{font-family:var(--f-display);font-weight:650;font-size:1.35rem;line-height:1.25;margin:2.2rem 0 .6rem;text-wrap:balance;color:var(--accent)}
+h3{font-size:1.05rem;margin:1.6rem 0 .4rem;text-wrap:balance}
+p,li{max-width:68ch}
+a{color:var(--accent);overflow-wrap:anywhere}
+hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
+blockquote{margin:1rem 0;padding:.8rem 1rem;background:var(--accent-soft);border-radius:6px}
+blockquote p{margin:.2rem 0}
+.tw{overflow-x:auto;margin:1rem 0;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.88rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;vertical-align:top;padding:.5rem .65rem;border-bottom:1px solid var(--line)}
+th{font-weight:700;background:var(--accent-soft)}
+tr:last-child td{border-bottom:0}
+.ph{background:var(--ph);color:var(--ph-fg);border-radius:3px;padding:0 .2em}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.75rem;margin:1rem 0}
+.summary>div{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:.9rem 1rem;min-width:0}
+.summary h3{margin:0 0 .3rem;font-size:1rem}
+.summary p{margin:0;font-size:.92rem;color:var(--fg)}
+.summary .ref{display:block;margin-top:.4rem;font-size:.8rem;color:var(--muted)}
+ol.index{columns:1;padding-left:1.2rem;font-size:.95rem}
+@media (min-width:640px){ol.index{columns:2}}
+.share{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-top:1rem}
+.share button{font:inherit;font-weight:600;font-size:.9rem;color:var(--surface);background:var(--accent);border:0;border-radius:6px;padding:.5rem .9rem;cursor:pointer}
+.share span{font-size:.85rem;color:var(--muted)}
+footer{margin-top:3rem;font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:1rem}
+.top{display:inline-block;margin-top:1rem;font-size:.85rem}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header class="hero">
+  <div class="eyebrow">Santiago de Surco · Urb. San Francisco de Asís</div>
+  <h1>Reglamento Interno del Edificio Mz. A Lote 17</h1>
+  <p class="sub">Dptos. 101, 102, 201, 202, 301, 302, 401, 402 y 502 · azotea (501) · dos tragaluces</p>
+  <span class="badge">Borrador para la Junta de Propietarios · octubre 2026</span>
+  <div class="share"><button type="button" id="copy">Copiar enlace</button><span id="copymsg" role="status"></span></div>
+</header>
+
+<nav class="tabs" aria-label="Secciones">
+  <a href="#resumen">Resumen</a><a href="#reglamento">Reglamento</a><a href="#notas">Notas y fuentes</a><a href="#documentos">Documentos</a>
+</nav>
+
+<section class="part" id="resumen">
+  <h2 class="part-title">Resumen</h2>
+  <p>Propuesta de reglas para resolver los problemas de convivencia del edificio, según la Ley 27157, el Código Civil, la Constitución y las ordenanzas de Surco. Los textos <span class="ph">[resaltados]</span> son datos por completar u opciones que debe elegir la Junta.</p>
+  <div class="summary">
+    <div><h3>Luz de áreas comunes</h3><p>Recibo repartido entre los 9 dptos., pagado antes del vencimiento, con fondo de reserva de 2 recibos. Prohibido conectarse al circuito común.</p><span class="ref">Arts. 24–28</span></div>
+    <div><h3>Mascotas</h3><p>Permitidas con correa, registro y limpieza inmediata de orina, heces o sangre. Los ladridos persistentes se sancionan.</p><span class="ref">Arts. 42–45</span></div>
+    <div><h3>Ruido por el tragaluz</h3><p>Cocinar no se prohíbe. Antes de las 7:00, ventana cerrada, nada de tabla de vidrio y base antideslizante.</p><span class="ref">Arts. 31–39</span></div>
+    <div><h3>Humo de cigarro</h3><p>No se fuma en áreas comunes ni en tragaluces. Dentro del dpto., el humo no debe pasar a otros.</p><span class="ref">Arts. 40–41</span></div>
+    <div><h3>Inquilinos</h3><p>Deben cumplir el reglamento. El propietario responde ante la Junta.</p><span class="ref">Art. 50</span></div>
+    <div><h3>Multas</h3><p>Con aviso previo y 5 días hábiles para descargos. Montos a aprobar por la Junta.</p><span class="ref">Arts. 51–53</span></div>
+  </div>
+  <p><strong>No es asesoría legal.</strong> Antes de inscribirlo en SUNARP debe revisarlo un abogado o notario.</p>
+</section>
+
+<section class="part" id="reglamento">
+  <h2 class="part-title">Reglamento</h2>
+  <ol class="index"><li><a href="#r-ttulo-i-disposiciones-generales">TÍTULO I – DISPOSICIONES GENERALES</a></li><li><a href="#r-ttulo-ii-descripcin-del-edificio">TÍTULO II – DESCRIPCIÓN DEL EDIFICIO</a></li><li><a href="#r-ttulo-iii-derechos-y-obligaciones">TÍTULO III – DERECHOS Y OBLIGACIONES</a></li><li><a href="#r-ttulo-iv-junta-de-propietarios">TÍTULO IV – JUNTA DE PROPIETARIOS</a></li><li><a href="#r-ttulo-v-gastos-comunes-suministro-de-luz-y-morosidad">TÍTULO V – GASTOS COMUNES, SUMINISTRO DE LUZ Y MOROSIDAD</a></li><li><a href="#r-ttulo-vi-normas-de-convivencia">TÍTULO VI – NORMAS DE CONVIVENCIA</a></li><li><a href="#r-ttulo-vii-arrendatarios-y-ocupantes">TÍTULO VII – ARRENDATARIOS Y OCUPANTES</a></li><li><a href="#r-ttulo-viii-infracciones-y-sanciones">TÍTULO VIII – INFRACCIONES Y SANCIONES</a></li><li><a href="#r-ttulo-ix-solucin-de-controversias">TÍTULO IX – SOLUCIÓN DE CONTROVERSIAS</a></li><li><a href="#r-ttulo-x-protocolo-de-emergencias-ley-n-31264">TÍTULO X – PROTOCOLO DE EMERGENCIAS (Ley N.° 31264)</a></li><li><a href="#r-disposiciones-finales-y-transitorias">DISPOSICIONES FINALES Y TRANSITORIAS</a></li></ol>
+  <blockquote>
+<p><strong>BORRADOR PARA DISCUSIÓN EN JUNTA DE PROPIETARIOS – versión 0.1 (octubre 2026).</strong>
+Los textos entre corchetes <code><span class="ph">[ ]</span></code> son datos por completar o alternativas que la
+Junta debe elegir. Antes de inscribirlo en SUNARP debe ser revisado por un
+abogado o notario, y deben verificarse los datos registrales (partida
+matriz, áreas y porcentajes). Ver <code>NOTAS_Y_FUENTES.md</code>.</p>
+</blockquote>
+<hr />
+<h2 id="r-ttulo-i-disposiciones-generales">TÍTULO I – DISPOSICIONES GENERALES</h2>
+<p><strong>Artículo 1.– Objeto.</strong>
+El presente Reglamento Interno regula el régimen de propiedad exclusiva y propiedad
+común del Edificio ubicado en Mz. A Lote 17, Urb. San Francisco de Asís, distrito de
+Santiago de Surco, inscrito en la Partida Electrónica N.° [<strong><em>_</em></strong>___] del Registro
+de Predios de Lima (en adelante, "el Edificio"); establece los derechos y
+obligaciones de sus propietarios y ocupantes; y regula la Junta de Propietarios, la
+administración, los gastos comunes y las normas de convivencia.</p>
+<p><strong>Artículo 2.– Base legal.</strong>
+Este Reglamento se sujeta a:
+1. La Constitución Política del Perú, en especial el art. 2 incisos 1 (libre
+   desarrollo y bienestar), 7 (intimidad), 9 (inviolabilidad del domicilio) y 22
+   (derecho a la paz, la tranquilidad, el descanso y a un ambiente equilibrado); el
+   art. 7 (salud); el art. 70 (propiedad ejercida en armonía con el bien común) y el
+   art. 103 (no se ampara el abuso del derecho).
+2. La Ley N.° 27157, sus modificatorias (entre ellas la Ley N.° 31264) y el TUO de su
+   Reglamento aprobado por D.S. N.° 035-2006-VIVIENDA.
+3. El Código Civil, en especial el art. II del Título Preliminar (abuso del
+   derecho) y los arts. 923, 924, 961 (inmisiones: humos, ruidos y molestias
+   análogas) y 969 a 993 (copropiedad, de aplicación supletoria).
+4. El D.S. N.° 085-2003-PCM (Estándares de Calidad Ambiental para Ruido), las
+   Ordenanzas de la Municipalidad Metropolitana de Lima sobre contaminación sonora
+   (Ordenanzas N.° 015-MML y N.° 1965-MML) y las ordenanzas de la Municipalidad de
+   Santiago de Surco, en especial la Ordenanza N.° 59-MSS (ruidos nocivos y
+   molestos), la Ordenanza N.° 680-MSS (convivencia con animales domésticos), la
+   Ordenanza N.° 611-MSS (horarios de residuos sólidos) y la Ordenanza N.° 701-MSS
+   (Régimen de Aplicación de Sanciones Administrativas y Cuadro de Infracciones).
+5. La Ley N.° 30407 (Protección y Bienestar Animal) y su modificatoria Ley N.° 31807;
+   la Ley N.° 27596 (Régimen Jurídico de Canes) y su Reglamento, D.S. N.° 006-2002-SA.
+6. La Ley N.° 32159 (control del consumo de productos de tabaco, nicotina o
+   sucedáneos).
+7. La Ley N.° 26872 (Conciliación Extrajudicial) y la Ley N.° 29824 (Justicia de Paz).</p>
+<p><strong>Artículo 3.– Ámbito de aplicación.</strong>
+Este Reglamento es obligatorio para todos los propietarios y para toda persona que
+ocupe o use, por cualquier título, una unidad del Edificio: arrendatarios,
+familiares, trabajadores del hogar, visitantes y cualquier otro poseedor. Cada
+propietario es responsable de hacerlo conocer a quienes ocupen su unidad.</p>
+<p><strong>Artículo 4.– Principio de convivencia.</strong>
+Los derechos de cada ocupante se ejercen respetando los derechos de los demás. Toda
+regla de este Reglamento se interpreta buscando el equilibrio entre el uso normal de
+la vivienda y el derecho de los vecinos a la tranquilidad, la salud y el descanso,
+y aplicando la medida menos gravosa que resulte eficaz.</p>
+<p><strong>Artículo 5.– Definiciones.</strong>
+- <strong>Unidad o sección exclusiva:</strong> cada departamento de propiedad exclusiva.
+- <strong>Bienes comunes:</strong> los descritos en el art. 8.
+- <strong>Tragaluces:</strong> los dos pozos de luz y ventilación del Edificio (Tragaluz 1 y
+  Tragaluz 2), incluidos su fondo, paredes interiores y el espacio aéreo.
+- <strong>Ocupante:</strong> propietario o poseedor que vive o permanece en una unidad.
+- <strong>Horario de descanso:</strong> el definido en el art. 34.
+- <strong>Junta:</strong> la Junta de Propietarios.
+- <strong>Presidente:</strong> el Presidente de la Junta de Propietarios.</p>
+<hr />
+<h2 id="r-ttulo-ii-descripcin-del-edificio">TÍTULO II – DESCRIPCIÓN DEL EDIFICIO</h2>
+<p><strong>Artículo 6.– Descripción general.</strong>
+El Edificio consta de <span class="ph">[cinco]</span> pisos y azotea, con nueve (9) departamentos de
+vivienda, dos (2) tragaluces y las áreas comunes descritas en este Título. Su
+fábrica está inscrita en el asiento <span class="ph">[______]</span> de la partida matriz.</p>
+<p><strong>Artículo 7.– Secciones de propiedad exclusiva.</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Unidad</th>
+<th>Piso</th>
+<th>Área techada (m²)</th>
+<th>Área libre (m²)</th>
+<th>Partida</th>
+<th>% participación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dpto. 101</td>
+<td>1</td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+</tr>
+<tr>
+<td>Dpto. 102</td>
+<td>1</td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+</tr>
+<tr>
+<td>Dpto. 201</td>
+<td>2</td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+</tr>
+<tr>
+<td>Dpto. 202</td>
+<td>2</td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+</tr>
+<tr>
+<td>Dpto. 301</td>
+<td>3</td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+</tr>
+<tr>
+<td>Dpto. 302</td>
+<td>3</td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+</tr>
+<tr>
+<td>Dpto. 401</td>
+<td>4</td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+</tr>
+<tr>
+<td>Dpto. 402</td>
+<td>4</td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+</tr>
+<tr>
+<td>Dpto. 502</td>
+<td>5</td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+<td><span class="ph">[ ]</span></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>100 %</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Los linderos y medidas perimétricas de cada unidad son los que constan en su
+partida registral. La numeración "501" corresponde a la azotea y no constituye un
+departamento [verificar en la partida matriz; si la azotea o parte de ella estuviera
+independizada como unidad exclusiva, ajustar este artículo y el art. 8].</p>
+<p><strong>Artículo 8.– Bienes de propiedad común.</strong>
+Son bienes comunes, intransferibles por separado de las unidades:
+1. El terreno, los cimientos, columnas, vigas, muros estructurales y techos que
+   sirven a dos o más unidades.
+2. La fachada, el ingreso, la puerta principal, el hall, los pasadizos, las
+   escaleras y sus descansos.
+3. <strong>Los dos tragaluces (pozos de luz y ventilación)</strong>, sus paredes y su fondo.
+4. <strong>La azotea</strong> <span class="ph">[salvo lo que indique la partida matriz]</span>, incluidos tendederos y
+   áreas de lavandería comunes si los hubiera.
+5. Los sistemas comunes de agua (cisterna, tanque elevado, bomba, tuberías
+   matrices), desagüe, electricidad de servicios comunes (medidor común, tablero,
+   cableado e iluminación de áreas comunes), intercomunicador, timbres, puerta
+   eléctrica y montantes.
+6. Los extintores, botiquines y demás bienes para emergencias (Ley N.° 31264).
+7. Los demás bienes que, por su naturaleza o destino, sirvan a dos o más unidades.</p>
+<p><strong>Artículo 9.– Servicios comunes.</strong>
+Son servicios comunes: la energía eléctrica de áreas comunes y de la bomba de agua;
+el agua de uso común <span class="ph">[y/o el suministro de agua del Edificio si no hay medidores
+individuales]</span>; la limpieza y mantenimiento de las áreas comunes y de los
+tragaluces; el mantenimiento de bomba, cisterna, tanque, intercomunicador y puerta;
+la fumigación y desinfección; y los demás que acuerde la Junta.</p>
+<p><strong>Artículo 10.– Porcentajes de participación.</strong>
+1. El porcentaje de participación de cada unidad en los bienes comunes es el
+   indicado en el art. 7, calculado según <span class="ph">[el área techada de cada unidad / otro
+   criterio que figure en la partida]</span>.
+2. Los gastos comunes se distribuyen según esos porcentajes, salvo los gastos para
+   los que este Reglamento o un acuerdo de Junta establezcan otro criterio (art.
+   24).
+3. La modificación de los porcentajes requiere mayoría calificada (art. 18) e
+   inscripción en SUNARP.</p>
+<hr />
+<h2 id="r-ttulo-iii-derechos-y-obligaciones">TÍTULO III – DERECHOS Y OBLIGACIONES</h2>
+<p><strong>Artículo 11.– Derechos de los propietarios.</strong>
+1. Usar y disfrutar su unidad y los bienes comunes conforme a su destino, sin
+   perjudicar a los demás.
+2. Arrendar o ceder su unidad, informando a la Junta (art. 50).
+3. Participar con voz y voto en la Junta, si está hábil.
+4. Ser elegido para los cargos directivos.
+5. Solicitar información y rendición de cuentas sobre la administración.
+6. Presentar quejas y reclamos según el procedimiento de este Reglamento.</p>
+<p><strong>Artículo 12.– Obligaciones de los propietarios y ocupantes.</strong>
+1. Cumplir este Reglamento y los acuerdos de la Junta.
+2. Pagar puntualmente las cuotas ordinarias, extraordinarias y la parte que le
+   corresponda del recibo de luz de servicios comunes.
+3. Usar la unidad exclusivamente para vivienda <span class="ph">[salvo actividades profesionales sin
+   atención masiva al público que no generen molestias]</span>.
+4. Mantener su unidad en buen estado de conservación, en especial las instalaciones
+   sanitarias y eléctricas cuya falla pueda afectar a otras unidades.
+5. Permitir el ingreso a su unidad, con aviso previo, para reparaciones urgentes de
+   instalaciones comunes; en emergencia (fuga de agua o gas, incendio, cortocircuito)
+   podrá ingresarse con presencia de dos propietarios y, de ser posible, de la
+   autoridad.
+6. Responder por los daños que causen él, sus familiares, inquilinos, visitas o
+   animales a los bienes comunes o a otras unidades.
+7. Comunicar al Presidente un teléfono de contacto para emergencias.</p>
+<p><strong>Artículo 13.– Prohibiciones generales.</strong>
+Está prohibido:
+1. Alterar la estructura, fachada, color exterior o los tragaluces sin autorización
+   de la Junta y licencia municipal cuando corresponda.
+2. Ocupar, cerrar o apropiarse de áreas comunes, o dejar en ellas objetos, bicicletas,
+   bolsas de basura o muebles.
+3. Conectar instalaciones particulares (eléctricas, de agua o de cable) a las redes
+   comunes (art. 27).
+4. Realizar actividades que pongan en riesgo la seguridad, salubridad o tranquilidad
+   del Edificio.
+5. Almacenar materiales inflamables, explosivos o peligrosos.</p>
+<hr />
+<h2 id="r-ttulo-iv-junta-de-propietarios">TÍTULO IV – JUNTA DE PROPIETARIOS</h2>
+<p><strong>Artículo 14.– Constitución.</strong>
+La Junta de Propietarios está integrada por los propietarios de las nueve unidades.
+Queda constituida con el otorgamiento de este Reglamento y se inscribe, junto con su
+Presidente, en la partida matriz del Edificio. Es el órgano máximo de decisión.</p>
+<p><strong>Artículo 15.– Órganos.</strong>
+1. <strong>Presidente:</strong> representa legalmente a la Junta. Debe ser propietario.
+2. <strong>Tesorero:</strong> administra los fondos, cobra cuotas, paga el recibo de luz común y
+   rinde cuentas.
+3. <strong>Secretario:</strong> convoca por encargo del Presidente, redacta y custodia el Libro
+   de Actas y lleva el registro de mascotas y de contactos.
+Duran <span class="ph">[un (1)]</span> año y pueden ser reelegidos. Los cargos son ad honorem, salvo acuerdo
+distinto. La Junta puede contratar un administrador externo.</p>
+<p><strong>Artículo 16.– Sesiones.</strong>
+1. <strong>Ordinaria:</strong> una vez al año, en el mes de <span class="ph">[enero]</span>, para aprobar el presupuesto,
+   las cuentas y elegir directiva.
+2. <strong>Extraordinaria:</strong> cuando la convoque el Presidente o lo pidan propietarios que
+   representen al menos el veinticinco por ciento (25 %) de los porcentajes de
+   participación.</p>
+<p><strong>Artículo 17.– Convocatoria.</strong>
+1. Se hace por escrito, con al menos <span class="ph">[cinco (5)]</span> días calendario de anticipación,
+   mediante aviso en el ingreso del Edificio, debajo de la puerta de cada unidad y
+   por el grupo de WhatsApp o correo electrónico registrado por cada propietario.
+2. Indica fecha, hora, lugar o enlace virtual, agenda, y la hora de la segunda
+   convocatoria (que podrá ser <span class="ph">[media hora]</span> después de la primera).
+3. Solo se tratan los temas de la agenda, salvo que asistan todos los propietarios
+   y acuerden tratar otros.</p>
+<p><strong>Artículo 18.– Quórum y mayorías.</strong>
+1. El quórum y las votaciones se computan por porcentajes de participación de los
+   propietarios hábiles.
+2. <strong>Primera convocatoria:</strong> quórum de más del cincuenta por ciento (50 %).
+   <strong>Segunda convocatoria:</strong> con los propietarios hábiles asistentes.
+3. <strong>Mayoría simple</strong> (más del 50 % de los porcentajes presentes): acuerdos
+   ordinarios, presupuesto, cuotas, elección de directiva, normas de convivencia
+   complementarias y multas dentro de los rangos de este Reglamento.
+4. <strong>Mayoría calificada</strong> (dos tercios de los porcentajes de participación del
+   total del Edificio): modificación de este Reglamento; venta, gravamen, cesión o
+   cambio de destino de bienes comunes; modificación de porcentajes; obras que
+   alteren tragaluces, fachada o azotea; y cuotas extraordinarias mayores a
+   <span class="ph">[tres (3)]</span> cuotas ordinarias.
+5. Los acuerdos válidamente adoptados obligan a todos, incluidos los ausentes y los
+   que votaron en contra, sin perjuicio de su derecho a impugnarlos judicialmente.</p>
+<p><strong>Artículo 19.– Propietario hábil.</strong>
+Es hábil el propietario que no adeude tres (3) o más cuotas ordinarias, ni una (1)
+cuota extraordinaria vencida, a la fecha de la convocatoria. El propietario inhábil
+puede asistir con voz pero sin voto, y no se computa para el quórum.</p>
+<p><strong>Artículo 20.– Representación.</strong>
+El propietario puede hacerse representar por carta poder simple para cada sesión.
+Los arrendatarios pueden asistir con voz, sin voto, salvo poder del propietario.</p>
+<p><strong>Artículo 21.– Sesiones virtuales o mixtas.</strong>
+1. La Junta puede sesionar en forma presencial, virtual (videollamada: Zoom, Google
+   Meet u otra) o mixta.
+2. La convocatoria indica el enlace. El Secretario verifica la identidad de los
+   asistentes (cámara encendida al pasar lista y DNI si se solicita).
+3. La votación es nominal y en voz alta o por un medio que deje constancia.
+4. La sesión se graba y la grabación se conserva al menos <span class="ph">[un (1) año]</span>.
+5. El acta se firma por los asistentes, en forma física o con firma digital, dentro
+   de los <span class="ph">[quince (15)]</span> días siguientes.
+6. <strong>El grupo de WhatsApp sirve para comunicar y convocar, pero no para adoptar
+   acuerdos</strong> que modifiquen este Reglamento o deban inscribirse.</p>
+<p><strong>Artículo 22.– Actas.</strong>
+Los acuerdos constan en un Libro de Actas legalizado notarialmente. El acta indica
+fecha, asistentes y sus porcentajes, agenda, acuerdos y votación, y la firman el
+Presidente, el Secretario y los asistentes que lo deseen. Los acuerdos se comunican a
+los ausentes por escrito.</p>
+<hr />
+<h2 id="r-ttulo-v-gastos-comunes-suministro-de-luz-y-morosidad">TÍTULO V – GASTOS COMUNES, SUMINISTRO DE LUZ Y MOROSIDAD</h2>
+<p><strong>Artículo 23.– Cuotas.</strong>
+1. <strong>Cuota ordinaria mensual:</strong> cubre los gastos comunes regulares (luz común,
+   limpieza, mantenimiento de bomba, tanque y cisterna, fondo de reserva).
+2. <strong>Cuota extraordinaria:</strong> para gastos no previstos o mejoras aprobadas.
+3. Se pagan hasta el día <span class="ph">[cinco (5)]</span> de cada mes, por depósito o transferencia a la
+   cuenta de la Junta [N.° <strong><em>_</em></strong>_] o al Tesorero contra recibo.</p>
+<p><strong>Artículo 24.– Recibo de luz de servicios comunes.</strong>
+1. El suministro eléctrico de servicios comunes (iluminación de ingreso,
+   pasadizos y escaleras; bomba de agua; intercomunicador; puerta eléctrica) es
+   un servicio común.
+2. Su costo se distribuye entre las nueve unidades <strong><span class="ph">[Opción A: en partes iguales,
+   1/9 cada una, porque el uso de pasadizos, escaleras y bomba es similar entre
+   unidades]</span> <span class="ph">[Opción B: según los porcentajes de participación del art. 7]</span></strong>.
+3. El Tesorero publica cada mes en el grupo del Edificio la foto del recibo, el
+   monto que corresponde a cada unidad y, luego, el comprobante de pago.
+4. El recibo se paga <strong>antes de su vencimiento</strong> con el dinero del fondo, sin
+   esperar a que todos hayan pagado, para evitar recargos y cortes.</p>
+<p><strong>Artículo 25.– Titularidad del suministro común.</strong>
+La Junta gestionará ante la empresa distribuidora (Luz del Sur) que el suministro de
+servicios comunes figure a nombre de la Junta de Propietarios, representada por su
+Presidente. Mientras ello no ocurra, el titular actual colabora con la Junta y
+entrega copia de cada recibo.</p>
+<p><strong>Artículo 26.– Fondo de reserva.</strong>
+Se constituye un fondo de reserva equivalente, como mínimo, a <span class="ph">[dos (2)]</span> recibos de
+luz común más <span class="ph">[un (1)]</span> mantenimiento de bomba, para garantizar el pago oportuno del
+servicio y atender emergencias. Se forma con un aporte adicional de S/ [<strong>] por
+unidad durante [</strong>] meses.</p>
+<p><strong>Artículo 27.– Prohibición de conexiones al circuito común.</strong>
+1. Está prohibido conectar cualquier artefacto, extensión o instalación de una
+   unidad privada al circuito, tablero o tomacorrientes de áreas comunes, salvo
+   autorización expresa y temporal (por ejemplo, para una reparación).
+2. Detectada una conexión irregular, la Junta la desconectará, y el responsable
+   reembolsará el consumo estimado y será sancionado como falta grave, sin
+   perjuicio de las acciones legales que correspondan.
+3. La Junta realizará una revisión técnica del tablero común para verificar que
+   solo alimenta servicios comunes.</p>
+<p><strong>Artículo 28.– Ahorro de energía.</strong>
+La Junta procurará: iluminación LED en todas las áreas comunes; sensores de
+movimiento o temporizadores en pasadizos y escaleras; fotocelda o temporizador en
+luz exterior; revisión periódica de la bomba (fugas, flotador, arranques
+frecuentes); y revisión de la tarifa contratada con la distribuidora.</p>
+<p><strong>Artículo 29.– Morosidad.</strong>
+1. La cuota impaga a la fecha de vencimiento genera <span class="ph">[interés legal / recargo de
+   S/ __ por mes de atraso]</span>.
+2. El propietario con tres (3) cuotas ordinarias o una (1) extraordinaria impagas
+   queda inhábil para votar (art. 19).
+3. Los recibos de cuotas impagas tienen mérito ejecutivo; el Presidente está
+   facultado para iniciar su cobro judicial, sin necesidad de conciliación previa.
+4. La Junta <strong>no cortará</strong> el agua, la luz u otros servicios esenciales de ninguna
+   unidad como medida de cobro.
+5. La lista de deudas solo se comunica a los propietarios, sin publicarla fuera del
+   Edificio.
+6. La deuda por cuotas corresponde al propietario frente a la Junta, aunque haya
+   pactado con su inquilino que este las pague.</p>
+<p><strong>Artículo 30.– Transparencia.</strong>
+El Tesorero presenta un reporte mensual simple de ingresos, egresos y saldo, y
+rinde cuentas en la Junta Ordinaria. Cualquier propietario puede revisar los
+comprobantes.</p>
+<hr />
+<h2 id="r-ttulo-vi-normas-de-convivencia">TÍTULO VI – NORMAS DE CONVIVENCIA</h2>
+<h3 id="r-captulo-1-tragaluces">Capítulo 1 – Tragaluces</h3>
+<p><strong>Artículo 31.– Naturaleza de los tragaluces.</strong>
+Los dos tragaluces son bienes comunes destinados a la iluminación y ventilación
+natural de las unidades. Por su diseño, <strong>transmiten el sonido, el humo y los
+olores entre todos los pisos</strong>, desde el primero hasta el último. Por ello, quienes
+tengan ventanas hacia un tragaluz deben tener especial cuidado.</p>
+<p><strong>Artículo 32.– Prohibiciones en los tragaluces.</strong>
+Está prohibido:
+1. Arrojar objetos, agua, colillas, comida, basura, pelos o cualquier líquido.
+2. Colgar o tender ropa, alfombras u objetos que reduzcan la luz o ventilación de
+   otras unidades, o que goteen.
+3. Techar, cerrar, cubrir con mallas, calaminas o vidrio, o instalar equipos (aire
+   acondicionado, extractores, antenas, ductos) sin acuerdo de la Junta por
+   mayoría calificada y licencia municipal. La Municipalidad de Santiago de Surco
+   fiscaliza y sanciona el techado de pozos de luz sin licencia.
+4. Fumar o vapear asomado a ventanas que den al tragaluz (art. 40).
+5. Dejar animales en ventanas, repisas o fondos del tragaluz.
+6. Usar el tragaluz para conversar o llamar a otros pisos a viva voz.</p>
+<p><strong>Artículo 33.– Mantenimiento.</strong>
+La limpieza del fondo de los tragaluces se realiza <span class="ph">[trimestralmente]</span> como gasto
+común. El costo de retirar objetos arrojados o de reparar daños se carga al
+responsable.</p>
+<h3 id="r-captulo-2-ruidos-y-descanso">Capítulo 2 – Ruidos y descanso</h3>
+<p><strong>Artículo 34.– Horario de descanso.</strong>
+1. <strong>Domingo a jueves: de 22:00 a 07:00 horas.</strong>
+2. <strong>Viernes, sábado y víspera de feriado: de 23:00 a 08:00 horas.</strong>
+Durante el horario de descanso se debe mantener un nivel de ruido que no se perciba
+desde otras unidades.</p>
+<p><strong>Artículo 35.– Ruidos permitidos con precauciones.</strong>
+Las actividades normales de la vida diaria (cocinar, asearse, prepararse para ir a
+trabajar o estudiar) <strong>no están prohibidas</strong> en ningún horario. Dentro del horario
+de descanso, y en especial <strong>antes de las 07:00 horas</strong>, quienes las realicen en
+ambientes con ventana al tragaluz deberán:
+1. Mantener <strong>cerradas las ventanas que dan al tragaluz</strong> mientras cocinan o
+   realizan actividades que generen golpes o ruido.
+2. <strong>No picar sobre tablas de vidrio o superficies duras</strong>; usar tablas de madera o
+   polietileno sobre una base antideslizante (silicona, caucho o paño húmedo).
+3. Preferir preparar con anticipación (la noche anterior o el fin de semana) los
+   alimentos que requieran picado prolongado.
+4. Evitar licuadoras, extractores de jugo y otros electrodomésticos ruidosos antes
+   de las <span class="ph">[06:30]</span> horas o, si es indispensable, usarlos con la ventana cerrada y por
+   el menor tiempo posible.
+5. Hablar en voz baja, evitar gritos, llamar a otras personas sin alzar la voz, y no
+   usar alarmas, música o televisión a volumen perceptible fuera de la unidad.</p>
+<p><strong>Artículo 36.– Ruidos prohibidos en horario de descanso.</strong>
+Durante el horario de descanso está prohibido: música, televisión o equipos a
+volumen perceptible fuera de la unidad; reuniones o fiestas ruidosas; arrastrar
+muebles; usar taladros, martillos u otras herramientas; zapatos de taco en pisos
+duros sin alfombra o protectores; lavadoras o secadoras ruidosas <span class="ph">[entre 22:00 y
+07:00]</span>; y cualquier otro ruido de impacto que se transmita por pisos, muros o
+tragaluces.</p>
+<p><strong>Artículo 37.– Reuniones y celebraciones.</strong>
+Las reuniones con música se avisan con <span class="ph">[24 horas]</span> de anticipación por el grupo del
+Edificio y deben terminar, o bajar su volumen al nivel del art. 34, al inicio del
+horario de descanso.</p>
+<p><strong>Artículo 38.– Obras y trabajos ruidosos.</strong>
+Solo se permiten de lunes a viernes de 08:00 a 18:00 horas y sábados de 09:00 a
+13:00 horas. No se permiten domingos ni feriados, salvo emergencias. Toda obra se
+comunica al Presidente con <span class="ph">[48 horas]</span> de anticipación, indicando su duración.</p>
+<p><strong>Artículo 39.– Ruidos persistentes.</strong>
+Se considera ruido molesto, aunque no se produzca en horario de descanso, el ruido
+<strong>persistente o reiterado</strong> que excede la tolerancia normal entre vecinos (art. 961
+del Código Civil), incluido el ladrido o aullido continuo de animales. Se acredita
+con quejas escritas de al menos <span class="ph">[dos (2)]</span> unidades distintas, o con la constatación
+del Presidente, de Serenazgo o de la Municipalidad, y puede acompañarse de
+grabaciones con fecha y hora.</p>
+<h3 id="r-captulo-3-humo-y-olores">Capítulo 3 – Humo y olores</h3>
+<p><strong>Artículo 40.– Áreas libres de humo.</strong>
+1. Está prohibido fumar o vapear cigarrillos, cigarros, vapeadores, productos de
+   tabaco calentado o cualquier sucedáneo en <strong>todas las áreas comunes</strong>: ingreso,
+   hall, pasadizos, escaleras, azotea y tragaluces.
+2. Está prohibido arrojar colillas o cenizas a las áreas comunes, a los tragaluces o
+   a la vía pública desde las ventanas.</p>
+<p><strong>Artículo 41.– Humo dentro de las unidades.</strong>
+1. Fumar dentro de la propia unidad es decisión de cada ocupante, pero <strong>el humo no
+   debe ingresar a otras unidades</strong>.
+2. Quien fume o vapee dentro de su unidad debe: no hacerlo junto a ventanas que den
+   al tragaluz; ventilar hacia la calle o fachada; y, de ser necesario, usar
+   purificador o extractor que no descargue hacia el tragaluz.
+3. El ingreso reiterado de humo a otra unidad, acreditado conforme al art. 39, se
+   considera inmisión que excede la tolerancia vecinal y se sanciona como falta
+   leve la primera vez y como falta grave en caso de reincidencia, sin perjuicio de
+   las acciones civiles del afectado.
+4. Igual regla se aplica a olores intensos y persistentes (basura acumulada, orina
+   de animales, quema de objetos).</p>
+<h3 id="r-captulo-4-animales-de-compaa">Capítulo 4 – Animales de compañía</h3>
+<p><strong>Artículo 42.– Tenencia responsable.</strong>
+Se permite la tenencia de animales de compañía en las unidades, siempre que se
+cumplan las reglas de este capítulo, la Ley N.° 30407 y la Ley N.° 27596. Estas
+reglas buscan proteger tanto el bienestar de los animales como la salud,
+tranquilidad e higiene de los vecinos.</p>
+<p><strong>Artículo 43.– Límite y registro.</strong>
+1. Cada unidad podrá tener hasta <span class="ph">[dos (2)]</span> perros o gatos. <span class="ph">[Ver Disposición
+   Transitoria Segunda sobre los animales que ya viven en el Edificio.]</span>
+2. El responsable registra cada animal ante el Secretario dentro de los <span class="ph">[treinta
+   (30)]</span> días: especie, raza, nombre, foto, carné de vacunación vigente,
+   identificación (microchip, cuando corresponda según la Ley N.° 31807) y teléfono
+   del responsable. Los animales se registran además en el registro municipal de
+   mascotas de Santiago de Surco (Ordenanza N.° 680-MSS).
+3. Los perros de asistencia o guía de personas con discapacidad no están sujetos a
+   límite.</p>
+<p><strong>Artículo 44.– Obligaciones del responsable.</strong>
+1. <strong>Correa:</strong> los perros transitan por las áreas comunes siempre con correa corta,
+   o en brazos o transportador. Los canes potencialmente peligrosos (Ley N.° 27596)
+   usan además bozal.
+2. <strong>Limpieza inmediata:</strong> el responsable recoge las heces y limpia y desinfecta
+   <strong>de inmediato</strong> la orina, sangre, vómito o pelo que su animal deje en
+   cualquier área común o unidad ajena, incluidos ingreso, pasadizos, escaleras,
+   tragaluces y azotea.
+3. <strong>Salud:</strong> mantener al animal vacunado, desparasitado y con atención
+   veterinaria. Si el animal está en celo, herido o enfermo y puede ensuciar las
+   áreas comunes, debe tomar las medidas necesarias (pañal, transportador,
+   atención veterinaria).
+4. <strong>Ladridos y aullidos:</strong> tomar medidas efectivas para evitar ladridos o aullidos
+   persistentes: paseos y ejercicio suficientes, no dejar al animal solo por
+   periodos prolongados, adiestramiento, paseador o guardería. Está prohibido el
+   uso de collares de descarga u otros métodos que causen sufrimiento.
+5. <strong>Espacios prohibidos:</strong> no dejar animales en tragaluces, azotea, ventanas,
+   escaleras o pasadizos, ni amarrados en áreas comunes.
+6. <strong>Daños:</strong> responder por los daños que el animal cause a personas, a los bienes
+   comunes o a otras unidades (art. 1979 del Código Civil).</p>
+<p><strong>Artículo 45.– Procedimiento especial por ladridos o suciedad.</strong>
+1. <strong>Primer aviso:</strong> comunicación escrita del Presidente al responsable y, si es
+   inquilino, también al propietario de la unidad, adjuntando las quejas o
+   evidencias.
+2. <strong>Plazo de corrección:</strong> <span class="ph">[quince (15)]</span> días para adoptar medidas (art. 44
+   inciso 4), informando cuáles adoptó.
+3. <strong>Multa:</strong> si persiste, se aplica la escala del art. 53.
+4. <strong>Otras vías:</strong> si continúa, la Junta o cualquier afectado puede solicitar la
+   intervención del Serenazgo y de la Subgerencia de Fiscalización de la
+   Municipalidad de Santiago de Surco, e invitar a conciliar.
+La falta de limpieza (art. 44 inciso 2) se sanciona desde la primera vez cuando
+esté acreditada con fotos o testigos. Los ocupantes quedan informados de que no
+recoger las excretas de un animal en áreas comunes de una vivienda multifamiliar
+también es infracción municipal en Santiago de Surco, sancionable con multa de
+hasta el 30 % de la UIT (Ordenanza N.° 680-MSS), y que los ruidos persistentes
+pueden ser multados por la Municipalidad.</p>
+<h3 id="r-captulo-5-limpieza-y-residuos">Capítulo 5 – Limpieza y residuos</h3>
+<p><strong>Artículo 46.– Limpieza y residuos.</strong>
+1. La basura se saca en bolsas cerradas, en el horario de recojo que la
+   Municipalidad de Santiago de Surco fija para el sector de la Urb. San Francisco
+   de Asís (Ordenanza N.° 611-MSS) <span class="ph">[completar horario; consultar al 411-5555]</span>, y
+   se deja
+   solo en el lugar que determine la Junta. No se deja basura en pasadizos ni
+   escaleras.
+2. Se recomienda segregar residuos reciclables según el programa municipal.
+3. Está prohibido sacudir alfombras, manteles o ropa por las ventanas hacia la
+   calle o los tragaluces.
+4. La limpieza de áreas comunes se realiza <span class="ph">[por turnos entre unidades / por
+   personal contratado como gasto común]</span>.</p>
+<h3 id="r-captulo-6-azotea">Capítulo 6 – Azotea</h3>
+<p><strong>Artículo 47.– Uso de la azotea.</strong>
+1. La azotea es de uso común <span class="ph">[verificar en la partida matriz]</span>. Se usa para
+   tendido de ropa, mantenimiento del tanque y usos que acuerde la Junta.
+2. Está prohibido construir, techar, cerrar o apropiarse de cualquier parte de ella
+   sin acuerdo de Junta por mayoría calificada y licencia municipal.
+3. Está prohibido dejar animales, fumar, hacer fogatas o parrillas, y realizar
+   reuniones ruidosas en ella.
+4. El acceso al tanque elevado se mantiene libre y <span class="ph">[con llave en poder del
+   Presidente]</span>.</p>
+<h3 id="r-captulo-7-seguridad-visitas-y-mudanzas">Capítulo 7 – Seguridad, visitas y mudanzas</h3>
+<p><strong>Artículo 48.– Seguridad.</strong>
+1. La puerta principal debe permanecer cerrada. No se abre a desconocidos.
+2. Cada ocupante es responsable de sus visitas y de los trabajadores que
+   contrate.
+3. Las cámaras de seguridad, si se instalan por acuerdo de Junta, solo enfocan
+   áreas comunes y accesos, nunca el interior de las unidades; las imágenes se usan
+   solo para fines de seguridad y conforme a la ley de datos personales.</p>
+<p><strong>Artículo 49.– Mudanzas.</strong>
+Las mudanzas se realizan de lunes a sábado de 08:00 a 18:00 horas, con aviso al
+Presidente con <span class="ph">[48 horas]</span> de anticipación. El responsable repara los daños a las
+áreas comunes.</p>
+<hr />
+<h2 id="r-ttulo-vii-arrendatarios-y-ocupantes">TÍTULO VII – ARRENDATARIOS Y OCUPANTES</h2>
+<p><strong>Artículo 50.– Arrendamiento.</strong>
+1. El propietario que arriende su unidad debe: (a) entregar copia de este
+   Reglamento al arrendatario e incluir en el contrato la obligación de cumplirlo;
+   (b) comunicar al Presidente el nombre y teléfono del arrendatario, el número de
+   ocupantes y los animales que tendrá; y (c) designar un teléfono propio de
+   contacto.
+2. <strong>El propietario responde solidariamente ante la Junta</strong> por las cuotas,
+   multas y daños derivados de los actos de su arrendatario, ocupantes, visitas y
+   animales, sin perjuicio de su derecho de repetir contra ellos.
+3. Las comunicaciones por infracciones de un arrendatario se dirigen a él y, en
+   copia, al propietario.
+4. La autorización del propietario a su arrendatario para tener animales de
+   compañía no lo exime del cumplimiento del Capítulo 4 del Título VI.</p>
+<hr />
+<h2 id="r-ttulo-viii-infracciones-y-sanciones">TÍTULO VIII – INFRACCIONES Y SANCIONES</h2>
+<p><strong>Artículo 51.– Clases de faltas.</strong>
+1. <strong>Leves:</strong> incumplimientos del horario de descanso o de las precauciones del
+   art. 35; dejar objetos en áreas comunes; no registrar animales; primera
+   inmisión de humo acreditada.
+2. <strong>Graves:</strong> reincidencia en falta leve dentro de doce (12) meses; no limpiar las
+   necesidades del animal; animales sin correa en áreas comunes; ruido o ladridos
+   persistentes acreditados (art. 39); fumar en áreas comunes; arrojar objetos a
+   los tragaluces; mudanzas u obras fuera de horario.
+3. <strong>Muy graves:</strong> reincidencia en falta grave; conexiones irregulares al circuito
+   común; obras que alteren tragaluces, fachada, azotea o estructura sin
+   autorización; daños intencionales a bienes comunes; conductas que pongan en
+   riesgo la seguridad del Edificio.</p>
+<p><strong>Artículo 52.– Procedimiento (debido proceso).</strong>
+1. La queja se presenta por escrito (puede ser por mensaje al Presidente) con la
+   evidencia disponible.
+2. El Presidente notifica al presunto infractor (y, si es arrendatario, al
+   propietario), quien tiene <strong>cinco (5) días hábiles</strong> para presentar su
+   descargo.
+3. El Presidente, con el Secretario y el Tesorero, resuelve dentro de los cinco
+   (5) días hábiles siguientes. Si alguno de ellos es parte, se reemplaza por otro
+   propietario.
+4. La sanción puede apelarse ante la Junta en la siguiente sesión.
+5. Antes de sancionar se buscará el trato directo y el acuerdo entre las partes.</p>
+<p><strong>Artículo 53.– Escala de sanciones.</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Falta</th>
+<th>1.ª vez</th>
+<th>2.ª vez (12 meses)</th>
+<th>3.ª vez y siguientes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leve</td>
+<td>Amonestación escrita</td>
+<td>Multa S/ <span class="ph">[50]</span></td>
+<td>Multa S/ <span class="ph">[100]</span></td>
+</tr>
+<tr>
+<td>Grave</td>
+<td>Multa S/ <span class="ph">[100]</span></td>
+<td>Multa S/ <span class="ph">[200]</span></td>
+<td>Multa S/ <span class="ph">[400]</span></td>
+</tr>
+<tr>
+<td>Muy grave</td>
+<td>Multa S/ <span class="ph">[400]</span> + reparación</td>
+<td>Multa S/ <span class="ph">[800]</span> + reparación</td>
+<td>Multa S/ <span class="ph">[800]</span> + reparación + acciones legales</td>
+</tr>
+</tbody>
+</table></div>
+<ol>
+<li>Los montos son referenciales y se aprueban por la Junta.</li>
+<li>Las multas se suman a la cuota del mes siguiente, ingresan al fondo de reserva
+   y su impago se trata como deuda de cuotas.</li>
+<li>La sanción no excluye la obligación de reparar el daño ni las acciones
+   municipales, civiles o penales.</li>
+</ol>
+<hr />
+<h2 id="r-ttulo-ix-solucin-de-controversias">TÍTULO IX – SOLUCIÓN DE CONTROVERSIAS</h2>
+<p><strong>Artículo 54.– Escalonamiento.</strong>
+Las controversias entre ocupantes, o entre ellos y la Junta, se resuelven así:
+1. <strong>Trato directo</strong> entre las partes, con mediación del Presidente o de un
+   propietario aceptado por ambas.
+2. <strong>Procedimiento interno</strong> del Título VIII.
+3. <strong>Vía municipal:</strong> llamada a la Central de Serenazgo / Alerta Surco
+   (01) 411-5555 o por el aplicativo "Alerta Surco" en el momento del hecho, y
+   denuncia escrita ante la Subgerencia de Fiscalización y Coactiva Administrativa
+   de la Municipalidad de Santiago de Surco (Jr. Bolognesi 275, tel. 411-5560) por
+   ruidos, animales u obras sin licencia.
+4. <strong>Conciliación extrajudicial</strong> (Ley N.° 26872) en un centro de conciliación
+   autorizado (incluidos los gratuitos del MINJUSDH), o ante el <strong>Juez de Paz</strong>.
+5. <strong>Vía judicial</strong>, incluyendo las acciones por inmisiones (art. 961 C.C.) y abuso
+   del derecho (art. 924 C.C.), y el proceso de ejecución por cuotas impagas.</p>
+<hr />
+<h2 id="r-ttulo-x-protocolo-de-emergencias-ley-n-31264">TÍTULO X – PROTOCOLO DE EMERGENCIAS (Ley N.° 31264)</h2>
+<p><strong>Artículo 55.– Protocolo.</strong>
+1. La Junta mantiene en el ingreso: lista de teléfonos de emergencia (Bomberos 116,
+   Policía 105, Serenazgo / Alerta Surco (01) 411-5555, Luz del Sur [<strong><em>_</em>_],
+   Sedapal [</strong><strong><em>_]), ubicación de la llave general de agua y del tablero eléctrico, y
+   ruta de evacuación.
+2. El Edificio contará con extintor(es) vigente(s) y botiquín como bienes comunes.
+3. La Junta lleva un registro voluntario y reservado de personas vulnerables
+   (adultos mayores, personas con discapacidad, niños) para priorizar su ayuda en
+   emergencias.
+4. Ante sismos: no usar las escaleras durante el movimiento; evacuar después hacia
+   la calle; punto de reunión: [</em></strong>_____].
+5. Ante emergencias sanitarias, la Junta coordina con las autoridades y adopta las
+   medidas que estas dispongan.</p>
+<hr />
+<h2 id="r-disposiciones-finales-y-transitorias">DISPOSICIONES FINALES Y TRANSITORIAS</h2>
+<p><strong>Primera.– Vigencia e inscripción.</strong>
+Este Reglamento rige desde su aprobación por la Junta. El Presidente gestionará su
+inscripción en la partida matriz del Edificio en SUNARP.</p>
+<p><strong>Segunda.– Animales que ya viven en el Edificio.</strong>
+Los animales de compañía que vivan en el Edificio a la fecha de aprobación de este
+Reglamento pueden permanecer aunque se supere el límite del art. 43, sin
+reemplazarlos cuando fallezcan o se retiren. Sus responsables deben registrarlos en
+el plazo del art. 43 y cumplir desde ya todas las obligaciones del art. 44.</p>
+<p><strong>Tercera.– Contratos de arrendamiento vigentes.</strong>
+Los propietarios con unidades arrendadas entregarán copia de este Reglamento a sus
+arrendatarios dentro de los <span class="ph">[quince (15)]</span> días de su aprobación y lo incorporarán en
+la renovación de los contratos.</p>
+<p><strong>Cuarta.– Adecuación al nuevo régimen de propiedad horizontal.</strong>
+Cuando entren en vigor el Decreto Legislativo N.° 1568 y su Reglamento, se aplicarán
+sus normas imperativas sobre las de este Reglamento que se les opongan, y la Junta
+adecuará este texto en la sesión siguiente.</p>
+<p><strong>Quinta.– Normas complementarias.</strong>
+La Junta puede aprobar por mayoría simple normas complementarias de convivencia que
+no contradigan este Reglamento.</p>
+<p><strong>Sexta.– Primeras acciones.</strong>
+En los <span class="ph">[sesenta (60)]</span> días siguientes a la aprobación, la directiva: (a) abrirá la
+cuenta de la Junta; (b) gestionará la titularidad del suministro común ante Luz del
+Sur; (c) hará la revisión técnica del tablero común (art. 27); (d) formará el
+registro de animales y de contactos; y (e) colocará en el ingreso el aviso de
+emergencias y un resumen de las normas de convivencia.</p>
+<hr />
+<h3 id="r-firmas">Firmas</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Unidad</th>
+<th>Propietario(a)</th>
+<th>DNI</th>
+<th>%</th>
+<th>Firma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>101</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>102</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>201</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>202</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>301</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>302</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>401</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>402</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>502</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>Santiago de Surco, <strong><em>_ de </em></strong><strong><em>_</em></strong>____ de 20__.</p>
+  <a class="top" href="#resumen">↑ Volver arriba</a>
+</section>
+
+<section class="part" id="notas">
+  <h2 class="part-title">Notas y fuentes</h2>
+  
+<p>Documento de apoyo al borrador <code>REGLAMENTO_INTERNO.md</code> del Edificio Mz. A Lt. 17,
+Urb. San Francisco de Asís, Santiago de Surco (departamentos 101, 102, 201, 202,
+301, 302, 401, 402 y 502; el 501 es azotea).</p>
+<blockquote>
+<p>Elaborado a partir de investigación web (octubre 2026). Varias fuentes oficiales
+no pudieron leerse completas y se trabajó con resúmenes; lo marcado como
+<strong>[verificar]</strong> debe confirmarse en SPIJ (spij.minjus.gob.pe), El Peruano o con
+un abogado antes de inscribir el Reglamento. <strong>No es asesoría legal.</strong></p>
+</blockquote>
+<hr />
+<h2 id="n-1-problemas-del-edificio-y-cmo-los-aborda-el-borrador">1. Problemas del edificio y cómo los aborda el borrador</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Problema reportado</th>
+<th>Artículos</th>
+<th>Solución propuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Luz de áreas comunes</strong> (tema prioritario)</td>
+<td>9, 24–28, Sexta</td>
+<td>Reparto transparente del recibo (partes iguales o por %), pago antes del vencimiento, fondo de reserva de 2 recibos, suministro a nombre de la Junta, prohibición de conexiones privadas al circuito común, revisión del tablero, LED y sensores.</td>
+</tr>
+<tr>
+<td>Perros que ladran todo el día (dpto. 502 y otros)</td>
+<td>39, 44.4, 45, 51, 53</td>
+<td>Ladrido persistente = ruido molesto; aviso → 15 días para corregir → multas → Serenazgo/Fiscalización Surco → conciliación.</td>
+</tr>
+<tr>
+<td>Orina, heces y gotas de sangre en pasadizos</td>
+<td>44.2, 44.3, 45, 51</td>
+<td>Limpieza y desinfección inmediata; sanción desde la 1.ª vez con fotos; atención veterinaria si el animal está en celo o herido. Además es infracción municipal (hasta 30 % UIT, Ord. 680-MSS).</td>
+</tr>
+<tr>
+<td>Perros sin correa en áreas comunes</td>
+<td>44.1, 51</td>
+<td>Correa corta obligatoria (bozal para razas Ley 27596).</td>
+</tr>
+<tr>
+<td>Propuesta de "cero mascotas"</td>
+<td>42, 43, Segunda</td>
+<td><strong>No recomendada</strong> (ver §3). Se propone tenencia regulada con límite de 2 por unidad hacia adelante y respeto de los animales actuales.</td>
+</tr>
+<tr>
+<td>Inquilino autorizado por su propietaria</td>
+<td>3, 50</td>
+<td>El inquilino debe cumplir el Reglamento; la propietaria responde solidariamente ante la Junta.</td>
+</tr>
+<tr>
+<td>Ruido de cocina desde las 5 a. m. (picado, tabla de vidrio)</td>
+<td>31, 34, 35</td>
+<td>Cocinar no se prohíbe; antes de las 07:00 ventanas al tragaluz cerradas, tabla de madera/polietileno con base antideslizante, picar con anticipación.</td>
+</tr>
+<tr>
+<td>Voces, risas, "levantar a los dormilones" que se oyen por el tragaluz</td>
+<td>31, 32.6, 35.5</td>
+<td>Hablar en voz baja y no llamar a otros pisos a viva voz en horario de descanso.</td>
+</tr>
+<tr>
+<td>Olor a cigarro que entra a otros departamentos</td>
+<td>40, 41</td>
+<td>Prohibido fumar/vapear en áreas comunes y tragaluces; dentro de la unidad, el humo no debe pasar a otras (art. 961 C.C.); sanción por reincidencia.</td>
+</tr>
+<tr>
+<td>Falta de Junta y reglas</td>
+<td>14–22, Primera</td>
+<td>Constitución de la Junta, directiva, quórum, sesiones virtuales (Zoom/Meet), actas, inscripción en SUNARP.</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="n-2-base-legal-resumida">2. Base legal resumida</h2>
+<h3 id="n-constitucin-poltica-del-per-1993">Constitución Política del Perú (1993)</h3>
+<ul>
+<li><strong>Art. 2.1:</strong> libre desarrollo y bienestar. El TC lo usa para proteger la tenencia de mascotas.</li>
+<li><strong>Art. 2.22:</strong> derecho a la paz, la tranquilidad, el descanso y a un ambiente equilibrado. Base de las reglas de ruido y humo.</li>
+<li><strong>Art. 7:</strong> derecho a la salud. Apoya la regla sobre el humo.</li>
+<li><strong>Art. 2.7 y 2.9:</strong> intimidad e inviolabilidad del domicilio. Limitan a las cámaras y el ingreso a las unidades.</li>
+<li><strong>Art. 2.24.a:</strong> nadie está obligado a hacer lo que la ley no manda. Toda prohibición debe ser razonable y proporcional.</li>
+<li><strong>Art. 70:</strong> la propiedad se ejerce en armonía con el bien común.</li>
+<li><strong>Art. 103:</strong> no se ampara el abuso del derecho.</li>
+</ul>
+<h3 id="n-propiedad-horizontal">Propiedad horizontal</h3>
+<ul>
+<li><strong>Ley 27157</strong> (Título III) y <strong>TUO D.S. 035-2006-VIVIENDA</strong>: régimen vigente.</li>
+<li>Contenido mínimo del Reglamento.</li>
+<li>Porcentajes de participación. Los gastos se reparten igual que la participación, salvo que se fije otro criterio.</li>
+<li>Junta y Presidente (art. 145 TUO).</li>
+<li>Mayoría de 2/3 para disponer de bienes comunes o cambiar porcentajes (art. 135 TUO).</li>
+<li>Solo votan los propietarios hábiles.</li>
+<li>Los recibos impagos tienen mérito ejecutivo.</li>
+<li><strong>Ley 31264 (2021)</strong>: el Reglamento debe incluir un protocolo de emergencias, y los extintores y botiquines pasan a ser bienes comunes.</li>
+<li><strong>D.Leg. 1568 (2023)</strong>, nuevo régimen de propiedad horizontal: <strong>aún no vigente</strong>.</li>
+<li>Entra en vigor 180 días después de que se publique su reglamento, que solo se prepublicó (R.M. 242-2024-VIVIENDA).</li>
+<li>Un juzgado ordenó publicarlo (Exp. 15403-2025).</li>
+<li>El borrador incluye una cláusula de adecuación (Disposición Cuarta). <strong>[verificar si ya se publicó]</strong></li>
+<li><strong>Modelo oficial de reglamento</strong>: R.VM. 004-2000-MTC/15.04.</li>
+<li><strong>Sesiones virtuales</strong>: Res. 026-2021-SUNARP-TR-T las admite. Conviene preverlas expresamente (art. 21).</li>
+</ul>
+<h3 id="n-cdigo-civil">Código Civil</h3>
+<ul>
+<li><strong>Art. II T.P. y art. 924:</strong> abuso del derecho.</li>
+<li><strong>Art. 961:</strong> el propietario no debe perjudicar a sus vecinos con "humos, hollines, emanaciones, ruidos, trepidaciones y molestias análogas que excedan la tolerancia que mutuamente se deben los vecinos".</li>
+<li><strong>Art. 1979:</strong> responsabilidad por daños causados por animales.</li>
+<li><strong>Arts. 969–993:</strong> copropiedad, de aplicación supletoria.</li>
+</ul>
+<h3 id="n-ruido">Ruido</h3>
+<ul>
+<li><strong>D.S. 085-2003-PCM</strong>, zona residencial: 60 dB(A) de 07:01 a 22:00 y 50 dB(A) de 22:01 a 07:00. Lo aplica la municipalidad, no la Junta.</li>
+<li><strong>Lima</strong>: Ord. 015-MML y Ord. 1965-MML.</li>
+<li><strong>Surco</strong>: Ord. 59-MSS. En intervenciones recientes por ruido en viviendas se han puesto papeletas de 25 % UIT (S/ 1,375 con la UIT 2026 de S/ 5,500). <strong>[verificar el monto en la Ord. 701-MSS]</strong></li>
+</ul>
+<h3 id="n-animales">Animales</h3>
+<ul>
+<li><strong>Ley 30407</strong> (bienestar animal), art. 5: deberes del tenedor.</li>
+<li><strong>Ley 31807</strong>: identificación por microchip.</li>
+<li><strong>Ley 27596</strong> y <strong>D.S. 006-2002-SA</strong>: canes, registro, y bozal para razas potencialmente peligrosas.</li>
+<li><strong>Surco – Ord. 680-MSS</strong> (2023):</li>
+<li>Registro municipal con microchip o placa QR.</li>
+<li>Correa obligatoria.</li>
+<li>Paseadores registrados.</li>
+<li>Multas de 30 % UIT a 2 UIT. No recoger excretas en áreas comunes de vivienda multifamiliar se sanciona con hasta 30 % UIT. <strong>[verificar los montos de ladridos: las fuentes dicen 25 % o 50 % UIT]</strong></li>
+</ul>
+<h3 id="n-tabaco">Tabaco</h3>
+<ul>
+<li><strong>Ley 32159 (nov. 2024)</strong> reemplazó a la Ley 28705 e incluye vapeadores. Prohíbe fumar en espacios públicos cerrados y lugares de trabajo. <strong>[verificar si su reglamento ya fue aprobado]</strong></li>
+<li>Las áreas comunes de un edificio privado no son, en principio, "de acceso al público". La prohibición en ellas se apoya en el acuerdo de la Junta.</li>
+<li>Dentro de la vivienda no se puede prohibir fumar, pero sí la <strong>inmisión</strong> del humo en otras unidades (art. 961 C.C.).</li>
+</ul>
+<h3 id="n-electricidad">Electricidad</h3>
+<ul>
+<li><strong>Ley de Concesiones Eléctricas (D.L. 25844), art. 90</strong>: la distribuidora puede cortar el suministro con <strong>2 o más recibos vencidos</strong>. Si el recibo común se atrasa, todo el edificio pierde la bomba de agua, la luz de escaleras y el intercomunicador.</li>
+<li><strong>La Junta no puede cortar la luz ni el agua de un moroso.</strong> El cobro se hace por la vía ejecutiva.</li>
+<li>Conectarse al circuito común sin autorización puede ser hurto de energía. <strong>[verificar con un abogado antes de denunciar]</strong></li>
+</ul>
+<h3 id="n-solucin-de-conflictos">Solución de conflictos</h3>
+<ul>
+<li><strong>Ley 26872, Conciliación Extrajudicial</strong>: es obligatoria antes de demandar por ruido, mascotas o humo. No se exige para cobrar cuotas.</li>
+<li>Hay centros gratuitos del MINJUSDH.</li>
+<li><strong>Juez de Paz</strong> (Ley 29824).</li>
+<li>La <strong>DEMUNA no</strong> atiende conflictos entre vecinos.</li>
+</ul>
+<hr />
+<h2 id="n-3-por-qu-no-cero-mascotas">3. ¿Por qué no "cero mascotas"?</h2>
+<ol>
+<li><strong>TC Exp. 01413-2017-PA/TC</strong> (Magdalena, caso Ruelas Noa):
+   - El edificio agregó la prohibición de mascotas cuando el vecino ya vivía allí con su animal.
+   - El TC la declaró <strong>inaplicable</strong> por vulnerar el libre desarrollo de la personalidad y el libre tránsito.
+   - Dijo que la Junta debe usar medidas menos gravosas: correa, limpieza, horarios y multas proporcionales.</li>
+<li><strong>TC Exp. 00949-2022-PA/TC</strong> (Cañete):
+   - Validó una prohibición que <strong>existía desde el origen</strong> del condominio y que los propietarios aceptaron al comprar.</li>
+<li><strong>Este edificio está en el caso 1</strong>:
+   - Ya hay varias mascotas.
+   - La propietaria del 502 autorizó la de su inquilino.
+   - Una prohibición total aprobada ahora tendría alto riesgo de caerse ante un amparo.
+   - Nunca podría obligar a nadie a deshacerse de un animal que ya vive en el edificio.</li>
+<li><strong>Alternativa del borrador:</strong> tenencia regulada.
+   - Límite de 2 animales por unidad hacia adelante; los actuales se quedan (Disposición Segunda).
+   - Registro, correa, limpieza inmediata y control de ladridos.
+   - Procedimiento con plazos y multas.
+   - Responsabilidad del propietario por su inquilino.</li>
+</ol>
+<hr />
+<h2 id="n-4-para-andrs-y-kevin-lo-que-se-puede-pedir-desde-ya-sobre-el-ruido-del-tragaluz">4. Para Andrés y Kevin: lo que se puede pedir desde ya sobre el ruido del tragaluz</h2>
+<ul>
+<li>El reclamo es legítimo. El art. 961 del Código Civil y el art. 2.22 de la Constitución protegen el descanso.</li>
+<li>Cocinar temprano también es legítimo. No se puede prohibir.</li>
+<li>El punto de equilibrio está en el art. 35 del borrador: cerrar la ventana al tragaluz, no usar tabla de vidrio, poner base antideslizante y picar con anticipación.</li>
+<li>Por su lado, el afectado puede usar burletes en la ventana al tragaluz y, si puede, vidrio laminado o doble.</li>
+</ul>
+<hr />
+<h2 id="n-5-agenda-sugerida-para-la-primera-junta-de-propietarios">5. Agenda sugerida para la primera Junta de Propietarios</h2>
+<ol>
+<li>Lectura de la convocatoria, lista de asistentes y sus porcentajes, y verificación del quórum.</li>
+<li>Elección de directiva provisional: Presidente, Tesorero y Secretario.</li>
+<li><strong>Luz de áreas comunes (urgente):</strong>
+   - Estado del recibo y de la deuda, si la hubiera.
+   - Elegir el criterio de reparto (Opción A, partes iguales, u Opción B, por porcentajes).
+   - Fecha de pago y cuenta.
+   - Fondo de reserva.
+   - Revisión técnica del tablero.</li>
+<li>Presentación del borrador de Reglamento Interno. Se recomienda votar en una segunda sesión para dar tiempo a revisarlo.</li>
+<li>Acuerdos inmediatos de convivencia, que pueden aprobarse por mayoría simple como normas complementarias:
+   - Correa y limpieza.
+   - Horario de descanso y precauciones de cocina.
+   - Áreas comunes libres de humo.</li>
+<li>Encargo de verificar en SUNARP:
+   - La partida matriz.
+   - Las áreas y porcentajes.
+   - Si la azotea (501) es bien común.</li>
+<li>Varios.</li>
+</ol>
+<p><strong>Formalidades:</strong>
+- Convocar por escrito con al menos 5 días de anticipación: aviso en el ingreso, bajo la puerta y por WhatsApp.
+- Si la sesión es por Zoom o Meet, grabarla y pasar lista con cámara.
+- Llevar libro de actas legalizado.
+- WhatsApp sirve para avisar y coordinar, <strong>no para votar</strong> acuerdos que deban inscribirse.</p>
+<hr />
+<h2 id="n-6-datos-por-completar-antes-de-aprobar">6. Datos por completar antes de aprobar</h2>
+<ul>
+<li>[ ] Número de partida matriz y asientos (SUNARP).</li>
+<li>[ ] Áreas y porcentajes de participación de las 9 unidades.</li>
+<li>[ ] Confirmar si la azotea (501) es bien común.</li>
+<li>[ ] Criterio de reparto de la luz común (A o B) y montos de cuota y fondo.</li>
+<li>[ ] Montos de multas (art. 53).</li>
+<li>[ ] Horario de recojo de basura del sector (Ord. 611-MSS, consultar al 411-5555).</li>
+<li>[ ] Teléfonos de Luz del Sur y Sedapal, y punto de reunión para sismos.</li>
+<li>[ ] Verificar la vigencia del D.Leg. 1568 y del reglamento de la Ley 32159.</li>
+<li>[ ] Revisión por abogado o notario e inscripción en SUNARP.</li>
+</ul>
+<hr />
+<h2 id="n-7-contactos-tiles-santiago-de-surco">7. Contactos útiles (Santiago de Surco)</h2>
+<ul>
+<li><strong>Serenazgo / Alerta Surco:</strong> (01) 411-5555, y la app "Alerta Surco".</li>
+<li><strong>Fiscalización (Subgerencia de Fiscalización y Coactiva Administrativa):</strong> Jr. Bolognesi 275, Plaza de Armas de Surco, tel. 411-5560.</li>
+<li><strong>Conciliación gratuita:</strong> Centros de Conciliación del MINJUSDH.</li>
+</ul>
+<hr />
+<h2 id="n-8-fuentes-principales">8. Fuentes principales</h2>
+<ul>
+<li>TUO D.S. 035-2006-VIVIENDA: <a href="https://www.msi.gob.pe/portal/wp-content/uploads/2011/09/11.-DS-035-2006-VIVIENDA.pdf" target="_blank" rel="noopener">https://www.msi.gob.pe/portal/wp-content/uploads/2011/09/11.-DS-035-2006-VIVIENDA.pdf</a></li>
+<li>Ley 27157: <a href="https://www2.congreso.gob.pe/sicr/cendocbib/con4_uibd.nsf/13569896A3DF0C2D05257B880055E081/$FILE/27157.pdf" target="_blank" rel="noopener">https://www2.congreso.gob.pe/sicr/cendocbib/con4_uibd.nsf/13569896A3DF0C2D05257B880055E081/$FILE/27157.pdf</a></li>
+<li>Ley 31264: <a href="https://busquedas.elperuano.pe/dispositivo/NL/1971071-1" target="_blank" rel="noopener">https://busquedas.elperuano.pe/dispositivo/NL/1971071-1</a></li>
+<li>Reglamentos modelo (R.VM. 004-2000-MTC/15.04): <a href="https://content.lpderecho.pe/wp-content/uploads/2021/11/Reglamento-Interno-MODELOS.pdf" target="_blank" rel="noopener">https://content.lpderecho.pe/wp-content/uploads/2021/11/Reglamento-Interno-MODELOS.pdf</a></li>
+<li>Directiva SUNARP 340-2008-SUNARP/SN: <a href="https://www.sunarp.gob.pe/ECR/archivos/Directivas%20Registrales/Resol%20340-2008-SN.pdf" target="_blank" rel="noopener">https://www.sunarp.gob.pe/ECR/archivos/Directivas%20Registrales/Resol%20340-2008-SN.pdf</a></li>
+<li>Sesiones virtuales (Res. 026-2021-SUNARP-TR-T): <a href="https://lpderecho.pe/junta-propietarios-sesionar-virtual-reglamento-interno-resolucion-026-2021-sunarp-tr-t/" target="_blank" rel="noopener">https://lpderecho.pe/junta-propietarios-sesionar-virtual-reglamento-interno-resolucion-026-2021-sunarp-tr-t/</a></li>
+<li>D.Leg. 1568 y su reglamento pendiente: <a href="https://lpderecho.pe/juez-ordena-que-en-30-dias-habiles-se-publique-el-reglamento-del-dl-1568-sobre-propiedad-horizontal-exp-15403-2025/" target="_blank" rel="noopener">https://lpderecho.pe/juez-ordena-que-en-30-dias-habiles-se-publique-el-reglamento-del-dl-1568-sobre-propiedad-horizontal-exp-15403-2025/</a></li>
+<li>D.S. 085-2003-PCM: <a href="https://sinia.minam.gob.pe/sites/default/files/sinia/archivos/public/docs/ds.085.2003.pcm_.pdf" target="_blank" rel="noopener">https://sinia.minam.gob.pe/sites/default/files/sinia/archivos/public/docs/ds.085.2003.pcm_.pdf</a></li>
+<li>Ord. 1965-MML: <a href="https://www.ipdu.pe/legislacion/ordenanza/1965-MML.PDF" target="_blank" rel="noopener">https://www.ipdu.pe/legislacion/ordenanza/1965-MML.PDF</a></li>
+<li>Ord. 59-MSS (Surco, ruidos): <a href="https://www2.congreso.gob.pe/sicr/cendocbib/con3_uibd.nsf/22A0ED08A628F68A05257914007944C0/$FILE/59-MSS.pdf" target="_blank" rel="noopener">https://www2.congreso.gob.pe/sicr/cendocbib/con3_uibd.nsf/22A0ED08A628F68A05257914007944C0/$FILE/59-MSS.pdf</a></li>
+<li>Ord. 680-MSS (Surco, animales): <a href="https://busquedas.elperuano.pe/dispositivo/NL/2196508-1" target="_blank" rel="noopener">https://busquedas.elperuano.pe/dispositivo/NL/2196508-1</a></li>
+<li>Ord. 701-MSS (Surco, sanciones): <a href="https://busquedas.elperuano.pe/dispositivo/SE/2300846-1" target="_blank" rel="noopener">https://busquedas.elperuano.pe/dispositivo/SE/2300846-1</a></li>
+<li>Ord. 611-MSS (Surco, residuos): <a href="https://www.munisurco.gob.pe/ova_doc/ord-611-mss-2/" target="_blank" rel="noopener">https://www.munisurco.gob.pe/ova_doc/ord-611-mss-2/</a></li>
+<li>TC Exp. 01413-2017-PA/TC: <a href="https://www.tc.gob.pe/institucional/notas-de-prensa/tc-establece-que-es-inconstitucional-prohibicion-del-uso-de-ascensores-para-llevar-mascotas/" target="_blank" rel="noopener">https://www.tc.gob.pe/institucional/notas-de-prensa/tc-establece-que-es-inconstitucional-prohibicion-del-uso-de-ascensores-para-llevar-mascotas/</a></li>
+<li>TC Exp. 00949-2022-PA/TC: <a href="https://tc.gob.pe/jurisprudencia/2023/00949-2022-AA.pdf" target="_blank" rel="noopener">https://tc.gob.pe/jurisprudencia/2023/00949-2022-AA.pdf</a></li>
+<li>Análisis de ambos casos: <a href="https://ius360.com/ante-situaciones-distintas-resoluciones-distintas-aproposito-del-caso-pendavis-pflucker-exp-n-00949-2022-pa-tc-canete-verus-el-caso-ruelas-noa-exp-01413-2017-pa-tc-lima/" target="_blank" rel="noopener">https://ius360.com/ante-situaciones-distintas-resoluciones-distintas-aproposito-del-caso-pendavis-pflucker-exp-n-00949-2022-pa-tc-canete-verus-el-caso-ruelas-noa-exp-01413-2017-pa-tc-lima/</a></li>
+<li>Ley 32159 (tabaco y vapeo): <a href="https://lpderecho.pe/ley-32159-regulan-consumo-tabaco-nicotina-proteger-salud-poblacion/" target="_blank" rel="noopener">https://lpderecho.pe/ley-32159-regulan-consumo-tabaco-nicotina-proteger-salud-poblacion/</a></li>
+<li>Ley 30407: <a href="https://faolex.fao.org/docs/pdf/per157968.pdf" target="_blank" rel="noopener">https://faolex.fao.org/docs/pdf/per157968.pdf</a></li>
+<li>Ley de Conciliación 26872: <a href="https://lpderecho.pe/ley-conciliacion-ley-26872/" target="_blank" rel="noopener">https://lpderecho.pe/ley-conciliacion-ley-26872/</a></li>
+<li>UIT 2026 (S/ 5,500): <a href="https://lpderecho.pe/valor-uit-2026-decreto-supremo-301-2025-ef/" target="_blank" rel="noopener">https://lpderecho.pe/valor-uit-2026-decreto-supremo-301-2025-ef/</a></li>
+</ul>
+  <a class="top" href="#resumen">↑ Volver arriba</a>
+</section>
+
+<section class="part" id="documentos">
+  <h2 class="part-title">Documentos por descargar</h2>
+  
+<p>La red de trabajo bloqueó la lectura de estas fuentes oficiales, así que no las pude abrir completas. Si las descargas (PDF o captura) y me las entregas, verifico y ajusto el reglamento con el texto exacto.</p>
+<h2 id="d-prioridad-alta-cambian-el-texto-del-reglamento">Prioridad alta (cambian el texto del reglamento)</h2>
+<ol>
+<li><strong>Ordenanza N.° 701-MSS de Santiago de Surco, con su Anexo "Cuadro de Infracciones y Sanciones"</strong>
+   - Para qué sirve: los códigos y montos exactos de multa por ruidos en vivienda, excretas, perros sin correa, ladridos, basura fuera de horario y techado de pozos de luz.
+   - Dónde: <a href="https://busquedas.elperuano.pe/dispositivo/SE/2300846-1" target="_blank" rel="noopener">https://busquedas.elperuano.pe/dispositivo/SE/2300846-1</a> o <a href="https://lexsoluciones.com/wp-content/uploads/2024/06/RASA-Ord.-701-MSS.pdf" target="_blank" rel="noopener">https://lexsoluciones.com/wp-content/uploads/2024/06/RASA-Ord.-701-MSS.pdf</a></li>
+<li><strong>TUO del Reglamento de la Ley 27157 (D.S. 035-2006-VIVIENDA), texto actualizado</strong>
+   - Para qué sirve: confirmar la numeración de los artículos sobre junta, quórum, mayorías y gastos.
+   - Dónde: SPIJ (<a href="https://spij.minjus.gob.pe" target="_blank" rel="noopener">https://spij.minjus.gob.pe</a>), buscar "035-2006-VIVIENDA". Alternativa: <a href="https://www.msi.gob.pe/portal/wp-content/uploads/2011/09/11.-DS-035-2006-VIVIENDA.pdf" target="_blank" rel="noopener">https://www.msi.gob.pe/portal/wp-content/uploads/2011/09/11.-DS-035-2006-VIVIENDA.pdf</a></li>
+<li><strong>Ley 27157 actualizada, con la modificación de la Ley 31264</strong>
+   - Dónde: SPIJ, o <a href="https://busquedas.elperuano.pe/dispositivo/NL/1971071-1" target="_blank" rel="noopener">https://busquedas.elperuano.pe/dispositivo/NL/1971071-1</a></li>
+<li><strong>Reglamento del Decreto Legislativo 1568 (nuevo régimen de propiedad horizontal)</strong>
+   - Para qué sirve: saber si ya se publicó y en qué fecha. Si ya está vigente, cambian las reglas de juntas y morosos.
+   - Dónde: El Peruano, buscar "Reglamento del Decreto Legislativo N° 1568".</li>
+<li><strong>Ordenanza N.° 680-MSS de Surco (convivencia con animales domésticos), texto completo</strong>
+   - Dónde: <a href="https://busquedas.elperuano.pe/dispositivo/NL/2196508-1" target="_blank" rel="noopener">https://busquedas.elperuano.pe/dispositivo/NL/2196508-1</a></li>
+<li><strong>Ordenanza N.° 611-MSS de Surco (horarios de recojo de residuos)</strong>
+   - Para qué sirve: ver qué sector y horario corresponden a la Urb. San Francisco de Asís.
+   - Dónde: <a href="https://www.munisurco.gob.pe/ova_doc/ord-611-mss-2/" target="_blank" rel="noopener">https://www.munisurco.gob.pe/ova_doc/ord-611-mss-2/</a> o llamar al 411-5555.</li>
+</ol>
+<h2 id="d-prioridad-media-respaldo-jurdico">Prioridad media (respaldo jurídico)</h2>
+<ol start="7">
+<li><strong>Sentencia del TC, Exp. 01413-2017-PA/TC</strong> (caso de las mascotas en Magdalena)
+   - Dónde: <a href="https://tc.gob.pe/jurisprudencia/" target="_blank" rel="noopener">https://tc.gob.pe/jurisprudencia/</a> buscar "01413-2017-PA/TC".</li>
+<li><strong>Sentencia del TC, Exp. 00949-2022-PA/TC</strong> (caso del condominio en Cañete)
+   - Dónde: <a href="https://tc.gob.pe/jurisprudencia/2023/00949-2022-AA.pdf" target="_blank" rel="noopener">https://tc.gob.pe/jurisprudencia/2023/00949-2022-AA.pdf</a></li>
+<li><strong>Fallo del TC de agosto de 2025 sobre mascotas en edificios</strong> (no se encontró su número de expediente)
+   - Nota de prensa: <a href="https://www.diarioconstitucional.cl/2025/08/27/tribunal-constitucional-de-peru-declara-inaplicable-reglamento-de-edificio-que-restringe-tenencia-de-mascotas/" target="_blank" rel="noopener">https://www.diarioconstitucional.cl/2025/08/27/tribunal-constitucional-de-peru-declara-inaplicable-reglamento-de-edificio-que-restringe-tenencia-de-mascotas/</a></li>
+<li><strong>Ley 32159 (tabaco y vapeo) y su reglamento</strong>, si ya fue aprobado<ul>
+<li>Dónde: <a href="https://busquedas.elperuano.pe" target="_blank" rel="noopener">https://busquedas.elperuano.pe</a> buscar "Ley 32159".</li>
+</ul>
+</li>
+<li><strong>Resolución 026-2021-SUNARP-TR-T</strong> (juntas virtuales)<ul>
+<li>Dónde: <a href="https://lpderecho.pe/junta-propietarios-sesionar-virtual-reglamento-interno-resolucion-026-2021-sunarp-tr-t/" target="_blank" rel="noopener">https://lpderecho.pe/junta-propietarios-sesionar-virtual-reglamento-interno-resolucion-026-2021-sunarp-tr-t/</a></li>
+</ul>
+</li>
+<li><strong>Directiva SUNARP, Res. 340-2008-SUNARP/SN</strong><ul>
+<li>Para qué sirve: requisitos para inscribir el reglamento y la junta.</li>
+<li>Dónde: <a href="https://www.sunarp.gob.pe/ECR/archivos/Directivas%20Registrales/Resol%20340-2008-SN.pdf" target="_blank" rel="noopener">https://www.sunarp.gob.pe/ECR/archivos/Directivas%20Registrales/Resol%20340-2008-SN.pdf</a></li>
+</ul>
+</li>
+<li><strong>Reglamentos internos modelo, R.VM. 004-2000-MTC/15.04</strong><ul>
+<li>Dónde: <a href="https://content.lpderecho.pe/wp-content/uploads/2021/11/Reglamento-Interno-MODELOS.pdf" target="_blank" rel="noopener">https://content.lpderecho.pe/wp-content/uploads/2021/11/Reglamento-Interno-MODELOS.pdf</a></li>
+</ul>
+</li>
+<li><strong>Ordenanza N.° 59-MSS de Surco (ruidos nocivos y molestos)</strong> y cualquier ordenanza posterior que la modifique.</li>
+<li><strong>Ordenanza N.° 1965-MML</strong> (contaminación sonora en Lima)<ul>
+<li>Dónde: <a href="https://www.ipdu.pe/legislacion/ordenanza/1965-MML.PDF" target="_blank" rel="noopener">https://www.ipdu.pe/legislacion/ordenanza/1965-MML.PDF</a></li>
+</ul>
+</li>
+</ol>
+<h2 id="d-documentos-del-propio-edificio-los-ms-importantes">Documentos del propio edificio (los más importantes)</h2>
+<ol start="16">
+<li><strong>Copia literal de la partida matriz del edificio en SUNARP</strong><ul>
+<li>Para qué sirve: confirmar áreas, porcentajes de participación, si la azotea (501) es bien común y si ya existe un reglamento inscrito.</li>
+<li>Dónde: <a href="https://www.sunarp.gob.pe" target="_blank" rel="noopener">https://www.sunarp.gob.pe</a> (Servicio de Publicidad Registral en Línea), con la dirección o el número de partida.</li>
+</ul>
+</li>
+<li><strong>Reglamento interno anterior</strong>, si existe uno (de la constructora o inscrito).</li>
+<li><strong>Últimos 3 a 6 recibos de luz del medidor de áreas comunes</strong><ul>
+<li>Para qué sirve: ver a nombre de quién está, si hay deuda y cuánto se consume, y calcular la cuota y el fondo de reserva.</li>
+</ul>
+</li>
+<li><strong>Requisitos de Luz del Sur para cambiar la titularidad del suministro a nombre de una junta de propietarios</strong> (consulta al 617-5000 o en su web).</li>
+</ol>
+  <a class="top" href="#resumen">↑ Volver arriba</a>
+</section>
+
+<footer>Borrador elaborado con investigación web a octubre de 2026. Verificar las normas en SPIJ o El Peruano antes de aprobar.</footer>
+</div>
+
+<script>
+document.getElementById('copy').addEventListener('click', function(){
+  var msg=document.getElementById('copymsg'); var url=location.href.split('#')[0];
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(function(){msg.textContent='Enlace copiado.'},function(){msg.textContent=url});
+  } else { msg.textContent=url; }
+});
+</script>
+</body>
+</html>
