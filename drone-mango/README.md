@@ -8,6 +8,8 @@ Flujo reproducible en Python para tres tareas:
 | **2** | **Entrena un modelo** de *machine learning* (Random Forest, SVM, Gradient Boosting) y, opcionalmente, un detector de *deep learning* (YOLO) | `tarea2_entrenar.py`, `yolo_mango.py` | [§ Tarea 2](BIBLIOGRAFIA.md#tarea-2-entrenar-el-modelo-machine-learning-y-deep-learning) |
 | **3** | Con **imágenes nuevas** y el modelo entrenado, indica **si hay mangos, cuántos** y entrega **estadísticas** (densidad, cobertura, tamaño de copa, espaciamiento, IC 95 %, mapa por celdas) | `tarea3_contar.py`, `yolo_mango.py contar` | [§ Tarea 3](BIBLIOGRAFIA.md#tarea-3-detectar-y-contar-mangos-en-imágenes-nuevas-con-estadísticas) |
 
+Enlaces a datasets públicos de imágenes de dron: **[DATASETS.md](DATASETS.md)**.
+
 La bibliografía indexada (44 referencias con DOI, organizadas por tarea y enlazadas a cada paso del código) está en **[BIBLIOGRAFIA.md](BIBLIOGRAFIA.md)**.
 
 ---
