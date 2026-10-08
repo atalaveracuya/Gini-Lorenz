@@ -1,0 +1,6 @@
+resultados/
+datos_demo/
+dataset_yolo/
+runs/
+*.pt
+__pycache__/
