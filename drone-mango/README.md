@@ -53,7 +53,11 @@ python tarea3_contar.py datos_demo/sector_nuevo.png --modelo resultados/tarea2/m
 * **Ortomosaico:** generarlo con WebODM/OpenDroneMap, Pix4D o Agisoft Metashape y exportar un
   **GeoTIFF**. Si además se exporta el **DSM/CHM**, la altura de copa es un descriptor muy útil
   (Sarron et al. 2018; Torres-Sánchez et al. 2015).
-* **Cámara multiespectral:** indique la banda NIR con `--banda-nir N`; se usará NDVI para la máscara.
+* **Cámara solo RGB (modo por defecto):** todo el flujo funciona **sin NDVI ni banda infrarroja**.
+  La vegetación se separa con el índice ExG y la clasificación usa índices RGB (ExG, ExGR, VARI,
+  GLI, NGRDI), color y textura. Los resultados de la demo se obtuvieron así, solo con RGB.
+* **Cámara multiespectral (opcional, a futuro):** si más adelante se cuenta con lente o filtro NIR,
+  indique la banda con `--banda-nir N` y se agregará NDVI. No es necesario para identificar ni contar.
 * **Ortomosaicos muy grandes:** use `--escala 0.5` (reduce la resolución) o recorte el área por sectores.
 
 ### 1. Tarea 1: identificar el cultivo
@@ -62,7 +66,7 @@ python tarea3_contar.py datos_demo/sector_nuevo.png --modelo resultados/tarea2/m
 python tarea1_identificar.py sector_A.tif --verdad puntos_campo_A.csv --recortes --salida resultados/tarea1
 ```
 
-* Calcula los índices **ExG, ExGR, VARI, GLI, NGRDI** (y NDVI si hay NIR) → `*_indices.png`.
+* Calcula los índices RGB **ExG, ExGR, VARI, GLI, NGRDI** → `*_indices.png` (NDVI solo si se indica `--banda-nir`).
 * Segmenta la vegetación (umbral de **Otsu** sobre ExG) y separa cada copa con **watershed**.
 * Extrae unos 60 descriptores por copa: **forma** (área, diámetro, circularidad, solidez),
   **color** (RGB, HSV, CIELab), **índices** (media, DE, p90) y **textura** (GLCM de Haralick, LBP).
