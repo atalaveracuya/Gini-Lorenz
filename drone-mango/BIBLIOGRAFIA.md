@@ -146,7 +146,7 @@ Búsqueda del 09/10/2026. ✔ = autores, revista y DOI confirmados en búsqueda 
 - ✔ Kestur, R., et al. (2022). MangoGAN: A general adversarial network-based deep learning architecture for mango tree crown detection. *Journal of Applied Remote Sensing, 16*(1), 014527. https://doi.org/10.1117/1.JRS.16.014527
 - ✔ Ameslek, O., Zahir, H., Latifi, H., & Bachaoui, E. M. (2024). Combining OBIA, CNN, and UAV imagery for automated detection and mapping of individual olive trees. *Smart Agricultural Technology, 9*, 100546.
 - ◐ (2025). Mapping orchard trees from UAV imagery through one growing season: A comparison between OBIA-based and three CNN-based object detection methods. *Drones, 9*(9), 593. (autores por confirmar)
-- ✔ Jacygrad, E., et al. (2022). Seguimiento de copas de pistacho con UAV durante una temporada de crecimiento. *Drones, 6*(11), 343. https://doi.org/10.3390/drones6110343
+- ◐ Jacygrad, E., et al. (2022). [Título por confirmar; estudio de copas de pistacho con UAV a lo largo de una temporada]. *Drones, 6*(11), 343. https://doi.org/10.3390/drones6110343
 
 ### Tarea 2: Entrenar el modelo (ML / DL)
 - ◐ Farjon, G., Huijun, L., & Edan, Y. (2023). Deep-learning-based counting methods, datasets, and applications in agriculture: A review. *Precision Agriculture, 24*(5), 1683–1711. (preprint: arXiv:2303.02632)
