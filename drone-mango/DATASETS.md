@@ -35,7 +35,16 @@
 | 7 | Palm-Tree-Dataset | https://github.com/Nour093/Palm-Tree-Dataset | Fotos de dron con cajas (VOC/YOLO) | no confirmada |
 | 8 | NeonTreeEvaluation | https://zenodo.org/record/5914554 | 30k cajas RGB a 10 cm (avión, bosque) | CC BY 4.0 |
 
+## B2. Otros en Mendeley Data (búsqueda del 09/10/2026)
+
+- Coconut tree crown: https://data.mendeley.com/datasets/w4t73tvrf8/1 (copas de cocotero; contenido no confirmado)
+- Aerial images (UAV) of burned and unburned olive trees: https://data.mendeley.com/datasets/83kpndkrb2/1 (3.624 imágenes de dron, CC BY-NC-ND)
+- Avocado-DB: https://data.mendeley.com/datasets/b2d83zft4s/1 (no se confirmó si las imágenes son aéreas)
+
 ## C. Frutos de mango desde tierra (no son de dron)
+
+- Mango Dataset: https://data.mendeley.com/datasets/gcgrjvwmm2/1 (1.025 imágenes con etiquetas en vistas Single, Proximal y Far-Field)
+- Temporal Mango fruit Dataset: https://data.mendeley.com/datasets/9sb2rbn2g5/1 (~21.000 fotos de árboles de mango tomadas con celular a 2–3 m)
 
 - MangoYOLO (CQU): https://acquire.cqu.edu.au/articles/dataset/MangoYOLO_data_set/13450661 (1.730 imágenes en formato VOC, CC BY 4.0)
 - CQU On-tree mango instance segmentation: https://acquire.cqu.edu.au/articles/dataset/On-tree_mango_instance_segmentation_dataset/21655628
