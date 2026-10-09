@@ -131,3 +131,37 @@ Las revistas citadas están indexadas en Scopus y/o Web of Science (Q1–Q2 en s
 | 3 | Conteo, densidad, cobertura, tamaño de copa | `tarea3_contar.py` | 1, 33, 34, 38, 40 |
 | 3 | Patrón espacial (Clark-Evans) e IC bootstrap | `tarea3_contar.py` | 42, 43 |
 | 3 | Validación contra conteo de campo | `utilidades.evaluar_conteo` | 40, 41, 44 |
+
+---
+
+## Actualización: publicaciones de los últimos 5 años (2021–2026)
+
+Búsqueda del 09/10/2026. ✔ = autores, revista y DOI confirmados en búsqueda web; ◐ = datos parcialmente confirmados (falta el DOI o la lista completa de autores).
+
+### Tarea 1: Identificar el cultivo (mango) en imágenes de dron
+- ✔ Houde, K., Kamble, P., & Hegadi, R. (2026). Mango orchard aerial image dataset for research on fruit trees with UAVs in the precision agriculture. *Agricultural Science Digest*. https://doi.org/10.18805/ag.D-6385
+- ✔ Afsar, M. M., Bakhshi, A. D., Iqbal, M. S., Hussain, E., & Iqbal, J. (2024). High-precision mango orchard mapping using a deep learning pipeline leveraging object detection and segmentation. *Remote Sensing, 16*(17), 3207. https://doi.org/10.3390/rs16173207
+- ✔ Afsar, M. M., Iqbal, M. S., Bakhshi, A. D., Hussain, E., & Iqbal, J. (2025). MangiSpectra: A multivariate phenological analysis framework leveraging UAV imagery and LSTM for tree health and yield estimation in mango orchards. *Remote Sensing, 17*(4), 703. https://doi.org/10.3390/rs17040703
+- ✔ Bing, Q., Zhang, R., Zhang, L., Li, L., & Chen, L. (2025). UAV-SfM photogrammetry for canopy characterization toward unmanned aerial spraying systems precision pesticide application in an orchard. *Drones, 9*(2), 151. https://doi.org/10.3390/drones9020151
+- ✔ Kestur, R., et al. (2022). MangoGAN: A general adversarial network-based deep learning architecture for mango tree crown detection. *Journal of Applied Remote Sensing, 16*(1), 014527. https://doi.org/10.1117/1.JRS.16.014527
+- ✔ Ameslek, O., Zahir, H., Latifi, H., & Bachaoui, E. M. (2024). Combining OBIA, CNN, and UAV imagery for automated detection and mapping of individual olive trees. *Smart Agricultural Technology, 9*, 100546.
+- ◐ (2025). Mapping orchard trees from UAV imagery through one growing season: A comparison between OBIA-based and three CNN-based object detection methods. *Drones, 9*(9), 593. (autores por confirmar)
+- ✔ Jacygrad, E., et al. (2022). Seguimiento de copas de pistacho con UAV durante una temporada de crecimiento. *Drones, 6*(11), 343. https://doi.org/10.3390/drones6110343
+
+### Tarea 2: Entrenar el modelo (ML / DL)
+- ◐ Farjon, G., Huijun, L., & Edan, Y. (2023). Deep-learning-based counting methods, datasets, and applications in agriculture: A review. *Precision Agriculture, 24*(5), 1683–1711. (preprint: arXiv:2303.02632)
+- ✔ Zhang, C., Valente, J., Kooistra, L., Guo, L., & Wang, W. (2021). Orchard management with small unmanned aerial vehicles: A survey of sensing and analysis approaches. *Precision Agriculture, 22*(6).
+- ✔ Ball, J. G. C., Hickman, S. H. M., Jackson, T. D., et al. (2023). Accurate delineation of individual tree crowns in tropical forests from aerial RGB imagery using Mask R-CNN. *Remote Sensing in Ecology and Conservation, 9*(5), 641–655. https://doi.org/10.1002/rse2.332
+- ✔ Veitch-Michaelis, J., Cottam, A., Schweizer, D., Broadbent, E., Dao, D., Zhang, C., Almeyda Zambrano, A., & Max, S. (2024). OAM-TCD: A globally diverse dataset of high-resolution tree cover maps. *NeurIPS 2024 (Datasets & Benchmarks)*. arXiv:2407.11743
+- ✔ Meyer, H., & Pebesma, E. (2022). Machine learning-based global maps of ecological variables and the challenge of assessing them. *Nature Communications, 13*, 2208. https://doi.org/10.1038/s41467-022-29838-9
+- ✔ Zhong, Z., Yun, L., Cheng, F., Chen, Z., & Zhang, C. (2024). Light-YOLO: A lightweight and efficient YOLO-based deep learning model for mango detection. *Agriculture, 14*(1), 140. https://doi.org/10.3390/agriculture14010140
+- ◐ Gu, Z., He, D., Huang, J., Chen, J., Wu, X., et al. (2024). Simultaneous detection of fruits and fruiting stems in mango using improved YOLOv8 model deployed by edge device. *Computers and Electronics in Agriculture, 227*. https://doi.org/10.1016/j.compag.2024.109512 (DOI de una sola fuente)
+- ✔ Lee, S. S., Lim, L. G., Shivakumara, P., et al. (2024). Oil palm tree detection in UAV imagery using an enhanced RetinaNet. *Computers and Electronics in Agriculture, 227*. https://doi.org/10.1016/j.compag.2024.109530
+
+### Tarea 3: Detectar y contar mangos, con estadísticas
+- ✔ Birla, L., Bharadwaj, A., Jain, R., Deb, C. K., Sehgal, V. K., & Ramasubramanian, V. (2025). Deep learning model BiFPN-YOLOv8m for tree counting in mango orchards using satellite remote sensing data. *Scientific Reports, 15*, 33791. https://doi.org/10.1038/s41598-025-97562-7
+- ✔ Birla, L., et al. (2025). Mango (*Mangifera indica*) tree detection and counting in mango orchard with satellite images using deep learning model YOLO: A comparative analysis. *Indian Journal of Agricultural Sciences, 95*(6), 678–683. https://doi.org/10.56093/ijas.v95i6.161451
+- ✔ Afsar et al. (2024), *Remote Sensing* 16(17):3207 (ver Tarea 1): conteo y delineado de copas de mango con YOLOv7 + SAM, R² = 0,97 frente a 175 árboles digitalizados.
+- ✔ Ameslek et al. (2024), *Smart Agricultural Technology* 9:100546 (ver Tarea 1): 2.934 olivos contados con una exactitud del 99 %.
+- ✔ Veitch-Michaelis et al. (2024), OAM-TCD (ver Tarea 2): validación contra inventarios de árboles.
+- Anderson, N. T., Walsh, K. B., & Wulfsohn, D. (2021). Technologies for forecasting tree fruit load and harvest timing—From ground, sky and time. *Agronomy, 11*(7), 1409. https://doi.org/10.3390/agronomy11071409
